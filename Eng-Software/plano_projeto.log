@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.2)  30 MAR 2021 17:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.30)  30 MAR 2021 18:30
 entering extended mode
 **./plano_projeto.tex
 (plano_projeto.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> xparse <2020-03-03>
-(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+(D:\Nova pasta\tex/latex/base\report.cls
 Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
-(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+(D:\Nova pasta\tex/latex/base\size10.clo
 File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
 \c@part=\count179
@@ -22,8 +22,7 @@ File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
-(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
+(D:\Nova pasta\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count188
 \l__pdf_internal_box=\box47
@@ -50,10 +49,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 6.
- [1
 
-{C:/Users/Admin/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (plano_projeto.
-toc
+[1
+
+{C:/Users/Asus/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+(plano_projeto.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -90,27 +90,33 @@ Overfull \hbox (22.85962pt too wide) in paragraph at lines 23--23
 []\OT1/cmr/bx/n/14.4 Identificac~ao de ne-ces-si-dades de sub-con-tratac~ao 
  []
 
-) (plano_projeto.bbl) [7] (plano_projeto.aux) ) 
+) (descricao_tecnica_dos_sistemas.tex [7]
+Chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--9
+
+ []
+
+) (plano_projeto.bbl [8
+
+]) [9] (plano_projeto.aux) ) 
 Here is how much of TeX's memory you used:
- 476 strings out of 479334
- 8727 string characters out of 2857085
- 298745 words of memory out of 3000000
- 17982 multiletter control sequences out of 15000+200000
+ 482 strings out of 479334
+ 8706 string characters out of 2871683
+ 300745 words of memory out of 3000000
+ 17985 multiletter control sequences out of 15000+200000
  409583 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,6n,50p,381b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Admin\AppData\Local\M
-iKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1000.pk><C:/Users/Admin/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Admin/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/User
-s/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-<C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r12.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmr17.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmti10.pfb>
-Output written on plano_projeto.pdf (8 pages, 96675 bytes).
+ 44i,6n,50p,440b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Asus\AppData\Local\MiKTeX\fonts/pk/ljfou
+r/jknappen/ec/dpi600\tcbx1000.pk><D:/Nova pasta/fonts/type1/public/amsfonts/cm/
+cmbx10.pfb><D:/Nova pasta/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Nova pa
+sta/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Nova pasta/fonts/type1/public/
+amsfonts/cm/cmr12.pfb><D:/Nova pasta/fonts/type1/public/amsfonts/cm/cmr17.pfb><
+D:/Nova pasta/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on plano_projeto.pdf (10 pages, 100589 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
+ 64 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

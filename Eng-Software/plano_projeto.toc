@@ -25,3 +25,10 @@
 \contentsline {section}{\numberline {4.5}Identificação de necessidades de contratação de pessoal}{7}{}%
 \contentsline {section}{\numberline {4.6}Identificação de necessidades de subcontratação}{7}{}%
 \contentsline {section}{\numberline {4.7}Se necessário pode ser complementado com um organograma}{7}{}%
+\contentsline {chapter}{\numberline {5}Descrição técnica dos sistemas}{8}{}%
+\contentsline {section}{\numberline {5.1}Resumo da Especificação de requisitos}{8}{}%
+\contentsline {section}{\numberline {5.2}Descrição do software que será necessário desenvolver}{8}{}%
+\contentsline {subsection}{\numberline {5.2.1}Requisitos funcionais}{8}{}%
+\contentsline {subsubsection}{Casos de uso}{8}{}%
+\contentsline {subsubsection}{Requisitos}{9}{}%
+\contentsline {section}{\numberline {5.3}Descrição do estrutura física do hardware}{9}{}%
