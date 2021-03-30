@@ -11,3 +11,8 @@
 \contentsline {subsection}{\numberline {2.3.1}Desempenho esperado}{3}{}%
 \contentsline {subsection}{\numberline {2.3.2}Limitações}{4}{}%
 \contentsline {chapter}{\numberline {3}calendarizacao}{5}{}%
+\contentsline {chapter}{\numberline {4}Organização da Equipa}{6}{}%
+\contentsline {section}{\numberline {4.1}Lista de funções/competências necessárias}{6}{}%
+\contentsline {section}{\numberline {4.2}Membros da Equipa e as suas competências}{6}{}%
+\contentsline {section}{\numberline {4.3}Responsabilidades e Tarefas de cada membro da equipa}{6}{}%
+\contentsline {section}{\numberline {4.4}Responsabilidades e Tarefas de cada membro da equipa}{6}{}%

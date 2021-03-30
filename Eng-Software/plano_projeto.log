@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.2)  9 MAR 2021 18:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.30)  30 MAR 2021 17:10
 entering extended mode
 **./plano_projeto.tex
 (plano_projeto.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> xparse <2020-03-03>
-(C:\Users\ricar\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+(D:\Nova pasta\tex/latex/base\report.cls
 Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
-(C:\Users\ricar\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+(D:\Nova pasta\tex/latex/base\size10.clo
 File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
 \c@part=\count179
@@ -22,8 +22,7 @@ File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
-(C:\Users\ricar\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
+(D:\Nova pasta\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count188
 \l__pdf_internal_box=\box47
@@ -50,10 +49,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 6.
- [1
 
-{C:/Users/ricar/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (plano_projeto.
-toc
+[1
+
+{C:/Users/Asus/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+(plano_projeto.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -74,27 +74,29 @@ Chapter 2.
 
 ] [4]
 Chapter 3.
-) (plano_projeto.bbl) [5
+) (organizacao_da_equipa.tex [5
+
+]
+Chapter 4.
+) (plano_projeto.bbl) [6
 
 ] (plano_projeto.aux) ) 
 Here is how much of TeX's memory you used:
- 467 strings out of 479334
- 8002 string characters out of 2857085
- 294745 words of memory out of 3000000
- 17977 multiletter control sequences out of 15000+200000
+ 473 strings out of 479334
+ 8429 string characters out of 2871683
+ 296745 words of memory out of 3000000
+ 17980 multiletter control sequences out of 15000+200000
  409243 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,6n,50p,381b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmbx10.pfb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ricar/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ricar/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ricar/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/rica
-r/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on plano_projeto.pdf (6 pages, 85721 bytes).
+<D:/Nova pasta/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+><D:/Nova pasta/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Nova pasta/fonts/
+type1/public/amsfonts/cm/cmr10.pfb><D:/Nova pasta/fonts/type1/public/amsfonts/c
+m/cmr12.pfb><D:/Nova pasta/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Nova pa
+sta/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on plano_projeto.pdf (7 pages, 89577 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
+ 50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
