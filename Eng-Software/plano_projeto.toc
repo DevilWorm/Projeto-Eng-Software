@@ -13,6 +13,15 @@
 \contentsline {chapter}{\numberline {3}calendarizacao}{5}{}%
 \contentsline {chapter}{\numberline {4}Organização da Equipa}{6}{}%
 \contentsline {section}{\numberline {4.1}Lista de funções/competências necessárias}{6}{}%
-\contentsline {section}{\numberline {4.2}Membros da Equipa e as suas competências}{6}{}%
+\contentsline {section}{\numberline {4.2}Identificação dos membros da equipa}{6}{}%
+\contentsline {paragraph}{Ricardo Sá Monteiro \\ Aluno de 2º ano na Universidade Lusófona do Porto}{6}{}%
+\contentsline {paragraph}{Rita Mendes de Azevedo \\Aluna de 2º ano na Universidade Lusófona do Porto}{6}{}%
+\contentsline {paragraph}{Vasco Manuel Pinheiro de Oliveira Matos Rodrigues \\Aluno de 2º ano na Universidade Lusófona do Porto}{6}{}%
 \contentsline {section}{\numberline {4.3}Responsabilidades e Tarefas de cada membro da equipa}{6}{}%
-\contentsline {section}{\numberline {4.4}Responsabilidades e Tarefas de cada membro da equipa}{6}{}%
+\contentsline {subsection}{\numberline {4.3.1}Ricardo Sá Monteiro}{6}{}%
+\contentsline {subsection}{\numberline {4.3.2}Rita Mendes de Azevedo}{6}{}%
+\contentsline {subsection}{\numberline {4.3.3}Vasco Manuel Pinheiro de Oliveira Matos Rodrigues}{7}{}%
+\contentsline {section}{\numberline {4.4}Identificação de formação em valências/competências a adquirir}{7}{}%
+\contentsline {section}{\numberline {4.5}Identificação de necessidades de contratação de pessoal}{7}{}%
+\contentsline {section}{\numberline {4.6}Identificação de necessidades de subcontratação}{7}{}%
+\contentsline {section}{\numberline {4.7}Se necessário pode ser complementado com um organograma}{7}{}%
