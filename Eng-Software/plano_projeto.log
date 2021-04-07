@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.30)  30 MAR 2021 18:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.30)  7 APR 2021 23:17
 entering extended mode
 **./plano_projeto.tex
 (plano_projeto.tex
@@ -58,27 +58,47 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
-)
+ [1
+
+])
 \tf@toc=\write3
 \openout3 = `plano_projeto.toc'.
 
- (introducao.tex [1
-
-]
+ (introducao.tex [2]
 Chapter 1.
-) (ambito.tex [2
+) (ambito.tex [3
 
 ]
 Chapter 2.
-) (calendarizacao.tex [3
+[4
 
-] [4]
+]) (calendarizacao.tex [5]
 Chapter 3.
-) (organizacao_da_equipa.tex [5
+[6
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 11--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--18
+
+ []
+
+) (organizacao_da_equipa.tex [7]
 Chapter 4.
-[6
+[8
 
 ]
 Overfull \hbox (61.60454pt too wide) in paragraph at lines 19--19
@@ -90,33 +110,33 @@ Overfull \hbox (22.85962pt too wide) in paragraph at lines 23--23
 []\OT1/cmr/bx/n/14.4 Identificac~ao de ne-ces-si-dades de sub-con-tratac~ao 
  []
 
-) (descricao_tecnica_dos_sistemas.tex [7]
+) (descricao_tecnica_dos_sistemas.tex [9]
 Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--9
 
  []
 
-) (plano_projeto.bbl [8
+) (plano_projeto.bbl [10
 
-]) [9] (plano_projeto.aux) ) 
+]) [11] (plano_projeto.aux) ) 
 Here is how much of TeX's memory you used:
- 482 strings out of 479334
- 8706 string characters out of 2871683
- 300745 words of memory out of 3000000
- 17985 multiletter control sequences out of 15000+200000
+ 481 strings out of 479334
+ 8701 string characters out of 2871683
+ 301745 words of memory out of 3000000
+ 17984 multiletter control sequences out of 15000+200000
  409583 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,6n,50p,440b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Asus\AppData\Local\MiKTeX\fonts/pk/ljfou
-r/jknappen/ec/dpi600\tcbx1000.pk><D:/Nova pasta/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><D:/Nova pasta/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Nova pa
-sta/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Nova pasta/fonts/type1/public/
-amsfonts/cm/cmr12.pfb><D:/Nova pasta/fonts/type1/public/amsfonts/cm/cmr17.pfb><
-D:/Nova pasta/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on plano_projeto.pdf (10 pages, 100589 bytes).
+ 44i,6n,50p,979b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Asus\AppData\Local\MiKTeX\fonts/pk/ljfo
+ur/jknappen/ec/dpi600\tcbx1000.pk><D:/Nova pasta/fonts/type1/public/amsfonts/cm
+/cmbx10.pfb><D:/Nova pasta/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Nova p
+asta/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Nova pasta/fonts/type1/public
+/amsfonts/cm/cmr12.pfb><D:/Nova pasta/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+<D:/Nova pasta/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on plano_projeto.pdf (12 pages, 106589 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
