@@ -57,7 +57,7 @@
 </head>
 <body>
 <div>
-	<form method="get">
+	<form method="post">
 		E-mail<input name="user" value="">Password<input type = "password" name="password"><br><br>
 		<button class = "poggie" name = "signin" value = null>Sign in</button>
 	

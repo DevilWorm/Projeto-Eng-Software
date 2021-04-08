@@ -59,7 +59,7 @@
 				
 				try{
 					Class.forName("com.mysql.cj.jdbc.Driver"); 
-					Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
+					Connection conn = DriverManager.getConnection("jdbc:mysql://77.54.229.5:3306/epadaria","admin", "vasc1234");
 					Statement stat = conn.createStatement();
 					ResultSet rset = stat.executeQuery("select * from users");
 					boolean userCheck = false;
