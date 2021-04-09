@@ -6,7 +6,7 @@
 \contentsline {chapter}{\numberline {2}Âmbito do Projeto}{4}{}%
 \contentsline {section}{\numberline {2.1}Apresentação}{4}{}%
 \contentsline {subsection}{\numberline {2.1.1}Contexto e Enquadramento}{4}{}%
-\contentsline {section}{\numberline {2.2}Decomposição funcional do sistema}{4}{}%
+\contentsline {section}{\numberline {2.2}Decomposição funcional do sistema}{5}{}%
 \contentsline {section}{\numberline {2.3}Constrangimentos do processo}{5}{}%
 \contentsline {subsection}{\numberline {2.3.1}Desempenho esperado}{5}{}%
 \contentsline {subsection}{\numberline {2.3.2}Limitações}{5}{}%

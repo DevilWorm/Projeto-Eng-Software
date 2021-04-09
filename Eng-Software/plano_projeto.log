@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.30)  7 APR 2021 23:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.30)  9 APR 2021 13:46
 entering extended mode
 **./plano_projeto.tex
 (plano_projeto.tex
@@ -70,6 +70,17 @@ Chapter 1.
 
 ]
 Chapter 2.
+
+Overfull \hbox (3.97295pt too wide) in paragraph at lines 5--11
+\OT1/cmr/m/n/10 pro-du-tos ,como confec~ao dos proprios pro-du-tos com aux-il
+io de co-z-inha adquirindo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--11
+
+ []
+
 [4
 
 ]) (calendarizacao.tex [5]
@@ -121,10 +132,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--9
 
 ]) [11] (plano_projeto.aux) ) 
 Here is how much of TeX's memory you used:
- 481 strings out of 479334
- 8701 string characters out of 2871683
+ 482 strings out of 479334
+ 8709 string characters out of 2871683
  301745 words of memory out of 3000000
- 17984 multiletter control sequences out of 15000+200000
+ 17985 multiletter control sequences out of 15000+200000
  409583 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,6n,50p,979b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -134,7 +145,7 @@ ur/jknappen/ec/dpi600\tcbx1000.pk><D:/Nova pasta/fonts/type1/public/amsfonts/cm
 asta/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Nova pasta/fonts/type1/public
 /amsfonts/cm/cmr12.pfb><D:/Nova pasta/fonts/type1/public/amsfonts/cm/cmr17.pfb>
 <D:/Nova pasta/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on plano_projeto.pdf (12 pages, 106589 bytes).
+Output written on plano_projeto.pdf (12 pages, 107954 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
