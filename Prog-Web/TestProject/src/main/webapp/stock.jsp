@@ -6,7 +6,54 @@
 <meta charset="ISO-8859-1">
 <title>Padaria- Produtos</title>
 </head>
+<h3>Escreva o produto que pretende</h3>
+	<form method="get">
+		<p> Produto:</p>
+		<input type="text" name="produtoo">
+		<input type="submit" name="Query">
+	</form>
 <body>
+	<h3> Selecione os produtos a comprar</h3>
+	<form method="get">
+		<table border=1 cellpadding=5>
+			<tr>
+			<th>Nome</th>
+			<th>Preço</th>
+			</tr>	
+		<%
+		while(rset.next()){
+			int id=rset.getInt("id");
+		
+		%>
+		<tr>
+		<td> <input type="checkbox" name="id" value="<%=id %>"></td>
+		<td><%= rset.getString("nome") %></td>
+		<td><%= rset.getString("preco") %></td>
+		</tr>
+		
+		<%
+			}
+		%>
+		
+		</table>
+		<br>
+		<input type="submit" value="order">
+		<input type="reset" value="clear">
+		</form>
+		<a href="<% request.getRequestURI() %>"><h3>Back</h3></a>
+		
+		<%
+			rest.close();
+			stmt.close();
+			conn.close();
+		%>
+		%>
+		
+		
+	
+	
+///////////////
+
 <%
 public int getId(){
 	int currentId = -1;
