@@ -6,13 +6,30 @@
 <meta charset="ISO-8859-1">
 <title>Padaria- Produtos</title>
 </head>
+
 <h3>Escreva o produto que pretende</h3>
 	<form method="get">
 		<p> Produto:</p>
 		<input type="text" name="produtoo">
 		<input type="submit" name="Query">
 	</form>
-<body>
+<%
+	String[] produtos=request.getParameterValues("nome");
+	Class.forName("com.mysql.jdbc.Driver");
+	String produto=request.getParameter("pnome");
+	if(uthor !=null){
+		connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
+		Statement stmt=conn.createStatement();
+		
+		String str= "SELECT * FROM produtos WHERE nome IN("; str+= "'"+ produto+ "'";
+		System.out.println("Query statement is" +str);
+		Result.Set rset= stmt.executeQuery(str);
+	}
+	
+
+%>
+	
+	
 	<h3> Selecione os produtos a comprar</h3>
 	<form method="get">
 		<table border=1 cellpadding=5>
@@ -47,14 +64,8 @@
 			stmt.close();
 			conn.close();
 		%>
-		%>
 		
-		
-	
-	
-///////////////
-
-<%
+	<%
 public int getId(){
 	int currentId = -1;
 	try{
@@ -74,8 +85,7 @@ public int getId(){
 	return currentId + 1;
 }
 %>
-	
-	
+	<body>
 
 </body>
 </html>
