@@ -21,6 +21,23 @@
 	  margin: auto;
 	}
 	body {
+ 	 background-color:#f5ecd0;}
+
+</style>
+<style>
+	.poggie {
+	 
+	  border: 10px;
+	  color: #943939;
+	  padding: 10px 27px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  
+	  margin: auto;
+	}
+	body {
  	 background-color:#f5ecd0;
  	}
  	.center {
@@ -36,7 +53,7 @@
 
 </style>
 <meta charset="ISO-8859-1">
-<title>Sign up Page</title>
+<title>Home page</title>
 </head>
 <body>
 	<div align="right">
@@ -70,7 +87,7 @@
 		  	<tr>
 		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/stock.jsp"> Produtos</a></th>
 		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/stock.jsp"> Contactos</a></th>
-		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/stock.jsp"> Sobre nós</a></th>
+		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/sobre_nos.jsp"> Sobre nós</a></th>
 		  		
 		  	</tr>
 		  </thead>
