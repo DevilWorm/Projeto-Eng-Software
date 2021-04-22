@@ -21,7 +21,16 @@
 	  margin: auto;
 	}
 	body {
- 	 background-color:#f5ecd0;}
+ 	 background-color:#f5ecd0;
+ 	}
+ 	.center {
+	    text-align: center;
+	}
+	.center > div, .center > table /* insert any other block-level elements here */ {
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+ 	
 
   
 
@@ -30,30 +39,25 @@
 <title>Sign up Page</title>
 </head>
 <body>
-	<p align="right">
-	<div>
-		<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp">  Login In </a>
-		<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp"> Sign Up </a>
+	<div align="right">
+		<div>
+			<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp">  Login In </a>
+			<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp"> Sign Up </a>
+		</div>
 	</div>
-	</p>
 	
-	<center>
-	<img src="https://i.imgur.com/sfDeVYR.png" alt="some text" width=192 height=96>
-	</center>
-	<br>
-	<center>
-		 <table  width="70%" cellpadding="8" table bgcolor="#943939" style="color:#ffffff" >
-		 
-		 	<thead>
-		  	<tr>
-		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/stock.jsp"> Produtos</a></th>
-		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/stock.jsp"> Contactos</a></th>
-		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/stock.jsp"> Sobre nós</a></th>
-		  		
-		  	</tr>
-		  </thead>
-		  </table>
-	</center>
-	
+	<div class = "center">
+		<img src="https://i.imgur.com/sfDeVYR.png" alt="some text" width=192 height=96>
+		<br>
+		<table  width="70%" cellpadding="8" table bgcolor="#943939" style="color:#ffffff" >
+			<thead>
+				<tr>
+			  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/stock.jsp"> Produtos</a></th>
+			  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/stock.jsp"> Contactos</a></th>
+			  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/stock.jsp"> Sobre nós</a></th>
+			  	</tr>
+			</thead>
+		</table>
+	</div>
 </body>
 </html>
