@@ -30,15 +30,28 @@
 <title>Sign up Page</title>
 </head>
 <body>
-	<p align="right">
-	<div>
-		<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp">  Login In </a>
-		<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp"> Sign Up </a>
+	<div align="right">
+		<table>
+		<thead>
+		<tr>
+			<th>
+				<a href="http://localhost:8080/TestProject/carrinho.jsp">
+				<img src="https://i.imgur.com/xvXkEV7.png" alt="some text" width=40 height=40>
+				</a>
+			</th>
+			<th>
+				
+					<a class = "poggie" href = "http://localhost:8080/TestProject/login.jsp">  Login In </a>
+					<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp"> Sign Up </a>
+				
+			</th>
+			
+		</thead>
+		</table>
 	</div>
-	</p>
-	
+	<br>
 	<center>
-	<img src="https://i.imgur.com/sfDeVYR.png" alt="some text" width=192 height=96>
+		<img src="https://i.imgur.com/sfDeVYR.png" alt="some text" width=192 height=96>
 	</center>
 	<br>
 	<center>
