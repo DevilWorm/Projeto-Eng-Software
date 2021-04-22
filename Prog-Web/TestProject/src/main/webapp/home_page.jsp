@@ -58,16 +58,6 @@
 <title>Home page</title>
 </head>
 <body>
-	<p align="right">
-	<div>
-		<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp">  Login In </a>
-		<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp"> Sign Up </a>
-	</div>
-	</p>
-	
-	<center>
-	<img src="https://i.imgur.com/sfDeVYR.png" alt="some text" width=192 height=96>
-
 	<div align="right">
 		<table>
 		<thead>

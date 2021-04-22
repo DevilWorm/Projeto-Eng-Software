@@ -73,7 +73,12 @@
 	</div>
 	<br>
 	<center>
+		<center>
+		<a href="http://localhost:8080/TestProject/home_page.jsp">
 		<img src="https://i.imgur.com/sfDeVYR.png" alt="some text" width=192 height=96>
+		</a>
+
+	</center>
 	</center>
 	<br>
 	<center>
