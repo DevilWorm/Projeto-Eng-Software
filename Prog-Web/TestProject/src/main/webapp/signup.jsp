@@ -105,48 +105,55 @@
 	
 
 <div align="center" >
-	<h2>Preencha os campos</h2>
-	<br>
-	
+	<center>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Preencha os campos</th>
+                    </tr>
+                </thead>
 		<form method="get">
-		<table style="color:#943939">
-		<thead>
-		<tr>
-			<th>E-mail</th>
-			<th><input name="user" value=""></th>
-		</tr>
-		<tr>
-			<th>Morada</th>
-			<th><input type = "morada" name=""></th>
-		</tr>
-		<tr>
-			<th>Número de telemóvel</th>
-			<th><input type = "nr_tel" name=""></th>
-		</tr>
-		<tr>
-			<th>Data de Nascimento</th>
-			<th><input type = "datanasc" name=""></th>
-		</tr>
-		<tr>
-			<th>NIF</th>
-			<th><input type = "nif" name=""></th>
-		</tr>
-		<tr>
-			<th>Password</th>
-			<th><input type = "password" name="password"></th>
-		</tr>
-		</thead>
-		</table>
-		<br>
-			<button class = "poggie" name = "login" value = null>Login!</button>
-		</form>
-	
-	
+        <table style="color:#943939">
+        <thead>
+        <tr>
+            <td style="text-align:right">E-mail:</td>
+            <th><input name="user" value=""></th>
+        </tr>
+        <tr>
+            <td style="text-align:right">Morada:</td>
+            <th><input type = "morada" name=""></th>
+        </tr>
+        <tr>
+            <td style="text-align:right">Número de telémovel:</td>
+            <th><input type = "nr_tel" name=""></th>
+        </tr>
+        <tr>
+            <td style="text-align:right">Data de nascimento:</td>
+            <th><input type = "datanasc" name=""></th>
+        </tr>
+        <tr>
+            <td style="text-align:right">NIF:</td>
+            <th><input type = "nif" name=""></th>
+        </tr>
+        <tr>
+            <td style="text-align:right">Password:</td>
+            <th><input type = "password" name="password"></th>
+        </tr>
+         <tr>
+            <td style="text-align:right">Confirmar password:</td>
+            <th><input type = "password" name="password"></th>
+        </tr>
+        </thead>
+        </table>
+        <br>
+            <button class = "poggie" name = "login" value = null>Sign up!</button>
+        </form>
 	</form>
 	<%
 			if(request.getParameter("signin") != null){
 				String user = request.getParameter("user");
 				String pwd = request.getParameter("password");
+				String pwd2 = request.getParameter("password2");
 				String morad = request.getParameter("morada");
 				String tel = request.getParameter("nr_tel");
 				String datan = request.getParameter("datanasc");
@@ -158,8 +165,9 @@
 				PreparedStatement preparedStatement = conn.prepareStatement("insert into users value(?,?,?)");
 				if(user.contains("@") && pwd.length() >= 8){
 					try{
-						if(user.split("@")[1].equals("hotmail.com") && user.split("@")[0].equals("") == false){
-							
+						if(user.split("@")[1].equals("hotmail.com") && user.split("@")[0].equals("") == false)
+						{
+							if(pwd == pwd2){
 							preparedStatement.setInt(1, getId());
 							preparedStatement.setString(2,user);
 							preparedStatement.setString(3,morad);
@@ -170,7 +178,9 @@
 							preparedStatement.executeUpdate();
 							
 							response.sendRedirect("http://localhost:8080/TestProject/page2.jsp");	
-						}	
+						}
+							
+						}
 					}catch(ArrayIndexOutOfBoundsException e){
 						System.out.println("Out of bounds!");
 						response.sendRedirect("http://localhost:8080/TestProject/signup.jsp");
