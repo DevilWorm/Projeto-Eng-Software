@@ -55,11 +55,13 @@
 		</table>
 	</div>
 	<br>
-	<div align="center">
+<center>
+		<a href="http://localhost:8080/TestProject/home_page.jsp">
 		<img src="https://i.imgur.com/sfDeVYR.png" alt="some text" width=192 height=96>
-	
+		</a>
+	</center>
 	<br>
-	
+	<center>
 		 <table  width="70%" cellpadding="8" table bgcolor="#943939" style="color:#ffffff" >
 		 
 		 	<thead>
@@ -71,8 +73,9 @@
 		  	</tr>
 		  </thead>
 		  </table>
-	</div>
+	</center>
 	<br>
+	
 	<div align="center">
 		<h1>Contactos</h1>
 		<p> Telefone geral: 22x xxx xxx</p>

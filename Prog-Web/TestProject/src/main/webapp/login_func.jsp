@@ -50,7 +50,9 @@
 	</div>
 	<br>
 	<center>
+		<a href="http://localhost:8080/TestProject/home_page.jsp">
 		<img src="https://i.imgur.com/sfDeVYR.png" alt="some text" width=192 height=96>
+		</a>
 	</center>
 	<br>
 	<center>
@@ -59,8 +61,8 @@
 		 	<thead>
 		  	<tr>
 		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/stock.jsp"> Produtos</a></th>
-		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/stock.jsp"> Contactos</a></th>
-		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/stock.jsp"> Sobre nós</a></th>
+		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/contactos.jsp"> Contactos</a></th>
+		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/sobre_nos.jsp"> Sobre nós</a></th>
 		  		
 		  	</tr>
 		  </thead>

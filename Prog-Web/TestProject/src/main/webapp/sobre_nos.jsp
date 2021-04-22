@@ -55,11 +55,13 @@
 		</table>
 	</div>
 	<br>
-	<div align="center">
+	<center>
+		<a href="http://localhost:8080/TestProject/home_page.jsp">
 		<img src="https://i.imgur.com/sfDeVYR.png" alt="some text" width=192 height=96>
-	</div>
+		</a>
+	</center>
 	<br>
-	<div align="center">
+	<center>
 		 <table  width="70%" cellpadding="8" table bgcolor="#943939" style="color:#ffffff" >
 		 
 		 	<thead>
@@ -71,7 +73,7 @@
 		  	</tr>
 		  </thead>
 		  </table>
-	</div>
+	</center>
 	<div align="center">
 		<h2> Qual é o nosso objetivo?</h2>
 		

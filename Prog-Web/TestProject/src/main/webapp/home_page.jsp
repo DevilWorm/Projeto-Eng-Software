@@ -39,6 +39,7 @@
 	}
 	body {
  	 background-color:#f5ecd0;
+ 	  h1   {color: #943939;}
  	}
  	.center {
 	    text-align: center;
@@ -64,9 +65,10 @@
 				<a href="http://localhost:8080/TestProject/carrinho.jsp">
 				<img src="https://i.imgur.com/xvXkEV7.png" alt="some text" width=40 height=40>
 				</a>
+				
 			</th>
 			<th>
-				
+				<br>
 					<a class = "poggie" href = "http://localhost:8080/TestProject/login.jsp">  Login In </a>
 					<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp"> Sign Up </a>
 				
@@ -76,11 +78,13 @@
 		</table>
 	</div>
 	<br>
-	<div align="center">
+<center>
+		<a href="http://localhost:8080/TestProject/home_page.jsp">
 		<img src="https://i.imgur.com/sfDeVYR.png" alt="some text" width=192 height=96>
-	
+		</a>
+	</center>
 	<br>
-	
+	<center>
 		 <table  width="70%" cellpadding="8" table bgcolor="#943939" style="color:#ffffff" >
 		 
 		 	<thead>
@@ -92,10 +96,13 @@
 		  	</tr>
 		  </thead>
 		  </table>
-	</div>
+	</center>
+<div align="center">
+	<br>
+	<h1> Página inicial</h1>
 	
 
-	
-	
+	<img src="https://www.daninoce.com.br/wp-content/uploads/2018/11/9-receitas-deliciosas-de-naked-cake-dani-noce-destaque-960x625.jpg" alt="some text" width=760 height=425>
+</div>	
 </body>
 </html>
