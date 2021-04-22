@@ -41,7 +41,7 @@
 		Class.forName("com.mysql.jdbc.Driver");
 		String author=request.getParameter("pproduto");
 		if(produto!= null){
-			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/livros","root", "rita0412");
+			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
 			Statement stmt=conn.createStatement();
 			
 			String str="SELECT * FROM stock WHERE produto IN("; 
