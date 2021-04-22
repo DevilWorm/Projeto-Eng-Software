@@ -9,10 +9,10 @@
 <head>
 <style>
 	.poggie {
-	  background-color: #806b60; /* Green */
+	 
 	  border: 10px;
-	  color: white;
-	  padding: 15px 32px;
+	  color: #943939;
+	  padding: 10px 27px;
 	  text-align: center;
 	  text-decoration: none;
 	  display: inline-block;
@@ -30,14 +30,20 @@
 <title>Sign up Page</title>
 </head>
 <body>
+	<p align="right">
 	<div>
-		<a class = "poggie" href = "http://localhost:8080/TestProject/login.jsp"> Login In </a>
+		<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp">  Login In </a>
 		<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp"> Sign Up </a>
 	</div>
+	</p>
+	
 	<center>
 	<img src="https://i.imgur.com/sfDeVYR.png" alt="some text" width=192 height=96>
-	
-		 <table  width="35%" cellpadding="5" table bgcolor="#806b60" style="color:#ffffff" >
+	</center>
+	<br>
+	<center>
+		 <table  width="70%" cellpadding="8" table bgcolor="#943939" style="color:#ffffff" >
+		 
 		 	<thead>
 		  	<tr>
 		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/stock.jsp"> Produtos</a></th>
