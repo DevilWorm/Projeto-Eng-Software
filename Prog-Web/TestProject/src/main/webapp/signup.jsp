@@ -90,8 +90,8 @@
 		 	<thead>
 		  	<tr>
 		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/stock.jsp"> Produtos</a></th>
-		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/stock.jsp"> Contactos</a></th>
-		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/stock.jsp"> Sobre nós</a></th>
+		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/contactos.jsp"> Contactos</a></th>
+		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/sobre_nos.jsp"> Sobre nós</a></th>
 		  		
 		  	</tr>
 		  </thead>

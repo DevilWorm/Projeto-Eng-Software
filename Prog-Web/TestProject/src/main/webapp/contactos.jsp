@@ -1,29 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    
-<%@page import = "java.sql.*" 
-		import = "java.util.*"
-%>
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-	.poggie {
-	 
-	  border: 10px;
-	  color: #943939;
-	  padding: 10px 27px;
-	  text-align: center;
-	  text-decoration: none;
-	  display: inline-block;
-	  font-size: 16px;
-	  
-	  margin: auto;
-	}
-	body {
- 	 background-color:#f5ecd0;}
-
-</style>
 <style>
 	.poggie {
 	 
@@ -53,10 +32,10 @@
 
 </style>
 <meta charset="ISO-8859-1">
-<title>Home page</title>
+<title>Contactos</title>
 </head>
 <body>
-	<div align="right">
+<div align="right">
 		<table>
 		<thead>
 		<tr>
@@ -93,9 +72,22 @@
 		  </thead>
 		  </table>
 	</div>
-	
-
-	
-	
+	<br>
+	<div align="center">
+		<h1>Contactos</h1>
+		<p> Telefone geral: 22x xxx xxx</p>
+		<p> E-mail: ePadaria@gmail.com</p>
+		<br>
+		 <table  style="color:#943939" >
+		 
+		 	<thead>
+		  	<tr>
+			  	<a href="https://www.facebook.com/EPadaria-101399275434399">
+					<img src="https://i.imgur.com/Ww6tD08.png" alt="facebook" width=40 height=40>
+					</a>
+			</tr>
+			</thead>
+		</table>
+	</div>
 </body>
 </html>
