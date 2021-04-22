@@ -90,10 +90,11 @@
 		</thead>
 		</table>
 		<br>
-			<button class = "poggie" name = "login" value = null>Login!</button>
+			<button class = "poggie" name = "login" href = "http://localhost:8080/TestProject/page_fun.jsp" value = null>Login!</button>
 		</form>
 	</div>
 <br>
+<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp">  Login In </a>
 	
 </body>
 </html>
