@@ -48,7 +48,7 @@
 
 %>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Login Cliente</title>
 </head>
 <body>
 
@@ -92,9 +92,11 @@
 
 
 <br><br><br>
-
-	<div align="center" >
 	
+	
+	<div align="center" >
+	<h2>Login Cliente</h2>
+	<br>
 		<form method="get">
 		<table style="color:#943939">
 		<thead>
