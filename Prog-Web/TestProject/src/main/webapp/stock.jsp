@@ -10,7 +10,7 @@
 <h3>Escreva o produto que pretende</h3>
 	<form method="get">
 		<p> Produto:</p>
-		<input type="text" name="produtoo">
+		<input type="text" name="produto">
 		<input type="submit" name="Query">
 	</form>
 <%
