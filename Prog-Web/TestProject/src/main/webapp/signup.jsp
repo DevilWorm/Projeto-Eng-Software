@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
     
 <%@ page import = "java.sql.*"  %>
 <!DOCTYPE html>
@@ -25,39 +25,9 @@
 
 </style>
 <% Class.forName("com.mysql.cj.jdbc.Driver");  %>
-<%!
 
-	public int getId(){
-		int currentId = -1;
-		try{
-			
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
-			Statement stat = conn.createStatement();
-			ResultSet rset = stat.executeQuery("select * from users");
-			
-			
-			while(rset.next()){
-				currentId = rset.getInt(1);
-			}
-			System.out.println("Connected!");	
-		}catch(SQLException e) {
-			System.out.println("Bad Connection -" + e);
-		}
-		return currentId + 1;
-	}
-
-	/* public boolean checkEmail(String email){
-		//load all email endings wtv
-		for(int i = 0; i < allemails.length(); i++)
-			if ( email.contains(allemails[i]) ) //"@hotmail.com"
-				return true;
-			else
-				return false;
-	} */
-
-%>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Sign in</title>
 </head>
 <body>
 
@@ -94,7 +64,7 @@
 		  	<tr>
 		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/stock.jsp"> Produtos</a></th>
 		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/contactos.jsp"> Contactos</a></th>
-		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/sobre_nos.jsp"> Sobre nós</a></th>
+		  		<th><a style="color:#ffffff" href = "http://localhost:8080/TestProject/sobre_nos.jsp"> Sobre nÃ³s</a></th>
 		  		
 		  	</tr>
 		  </thead>
@@ -106,87 +76,91 @@
 
 <div align="center" >
 	<center>
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="2">Preencha os campos</th>
-                    </tr>
-                </thead>
-		<form method="get">
-        <table style="color:#943939">
-        <thead>
-        <tr>
-            <td style="text-align:right">E-mail:</td>
-            <th><input name="user" value=""></th>
-        </tr>
-        <tr>
-            <td style="text-align:right">Morada:</td>
-            <th><input type = "morada" name=""></th>
-        </tr>
-        <tr>
-            <td style="text-align:right">Número de telémovel:</td>
-            <th><input type = "nr_tel" name=""></th>
-        </tr>
-        <tr>
-            <td style="text-align:right">Data de nascimento:</td>
-            <th><input type = "datanasc" name=""></th>
-        </tr>
-        <tr>
-            <td style="text-align:right">NIF:</td>
-            <th><input type = "nif" name=""></th>
-        </tr>
-        <tr>
-            <td style="text-align:right">Password:</td>
-            <th><input type = "password" name="password"></th>
-        </tr>
-         <tr>
-            <td style="text-align:right">Confirmar password:</td>
-            <th><input type = "password" name="password"></th>
-        </tr>
-        </thead>
-        </table>
-        <br>
-            <button class = "poggie" name = "login" value = null>Sign up!</button>
-        </form>
-	</form>
+       <table>
+           	<thead>
+               <tr>
+                   <th colspan="2">Preencha os campos</th>
+               </tr>
+           	</thead>
+			<form method="get">
+		        <table style="color:#943939">
+			        <thead>
+			        	<tr>
+			        		<td style = "text-align:right">Nome:</td>
+			        		<th><input type = "text" name = "nome" id = "nome"></th>			        	
+			        	</tr>
+				        <tr>
+				            <td style="text-align:right">E-mail:</td>
+				            <th><input type = "text" name="email" id = "email"></th>
+				        </tr>
+				        <tr>
+				            <td style="text-align:right">Morada:</td>
+				            <th><input type = "text" name="morada" id = "morada"></th>
+				        </tr>
+				        <tr>
+				            <td style="text-align:right">NÃºmero de telÃ©movel:</td>
+				            <th><input type = "text" name="nr_tel" id = "nr_tel"></th>
+				        </tr>
+				        <tr>
+				            <td style="text-align:right">Data de nascimento:</td>
+				            <th><input type = "date" name="datanasc" id = "datanasc"></th>
+				        </tr>
+				        <tr>
+				            <td style="text-align:right">NIF:</td>
+				            <th><input type = "number" name="nif" id = "nif"></th>
+				        </tr>
+				        <tr>
+				            <td style="text-align:right">Password:</td>
+				            <th><input type = "password" name="pwd1" id = "pwd1"></th>
+				        </tr>
+				         <tr>
+				            <td style="text-align:right">Confirmar password:</td>
+				            <th><input type = "password" name="pwd2" id = "pwd2"></th>
+				        </tr>
+			        </thead>
+		        </table>
+		        <br>
+		        <button class = "w3-button poggie" name = "signin" value = null>Sign up!</button>
+     	    </form>
 	<%
 			if(request.getParameter("signin") != null){
-				String user = request.getParameter("user");
-				String pwd = request.getParameter("password");
-				String pwd2 = request.getParameter("password2");
-				String morad = request.getParameter("morada");
-				String tel = request.getParameter("nr_tel");
-				String datan = request.getParameter("datanasc");
-				String niff = request.getParameter("nif");
-				
-				Class.forName("com.mysql.cj.jdbc.Driver"); 
-				Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
-
-				PreparedStatement preparedStatement = conn.prepareStatement("insert into users value(?,?,?)");
-				if(user.contains("@") && pwd.length() >= 8){
-					try{
-						if(user.split("@")[1].equals("hotmail.com") && user.split("@")[0].equals("") == false)
-						{
-							if(pwd == pwd2){
-							preparedStatement.setInt(1, getId());
-							preparedStatement.setString(2,user);
-							preparedStatement.setString(3,morad);
-							preparedStatement.setString(4,tel);
-							preparedStatement.setString(5,datan);
-							preparedStatement.setString(6,niff);
-							preparedStatement.setString(7,pwd);
+				try(
+					Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
+					PreparedStatement preparedStatement = conn.prepareStatement("insert into clientes value(?,?,?,?,?,?,?,?)");			
+				){
+					String nome = request.getParameter("nome");
+					String email = request.getParameter("email");
+					String pwd1 = request.getParameter("pwd1");
+					String pwd2 = request.getParameter("pwd2");
+					String morada = request.getParameter("morada");
+					String tel = request.getParameter("nr_tel");
+					String datan = request.getParameter("datanasc");
+					int nif = Integer.parseInt(request.getParameter("nif"));
+					System.out.println(nome + "-" + email + "-" + pwd1 + "-" + pwd2);
+					if(pwd1.length() >= 8){
+						try{
+							preparedStatement.setInt(1, nif);
+							preparedStatement.setString(2,email);
+							preparedStatement.setString(3,pwd1);
+							preparedStatement.setString(4,datan);
+							preparedStatement.setString(5,nome);
+							preparedStatement.setString(6,tel);
+							preparedStatement.setString(7,morada);
+							preparedStatement.setString(8, "Empty");
 							preparedStatement.executeUpdate();
 							
-							response.sendRedirect("http://localhost:8080/TestProject/page2.jsp");	
+							System.out.println("Done?");
+							response.sendRedirect("http://localhost:8080/TestProject/home_page.jsp");
+						}catch(Exception e){
+							System.out.println("Out of bounds!");
+							response.sendRedirect("http://localhost:8080/TestProject/signup.jsp");
 						}
-							
-						}
-					}catch(ArrayIndexOutOfBoundsException e){
-						System.out.println("Out of bounds!");
-						response.sendRedirect("http://localhost:8080/TestProject/signup.jsp");
 					}
-				}
+				}catch(SQLException e){System.out.println(e);}
+			}else{
+				System.out.println("Now we here");
 			}
+			
 		%>
 </div>
 </body>
