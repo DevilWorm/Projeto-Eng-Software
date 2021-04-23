@@ -79,7 +79,7 @@
 		</table>
 	</div>
 	<br>
-<center>
+	<center>
 		<a href="http://localhost:8080/TestProject/home_page.jsp">
 		<img src="https://i.imgur.com/sfDeVYR.png" alt="some text" width=192 height=96>
 		</a>
@@ -101,12 +101,12 @@
 		  </table>
 	</center>
 
-<div align="center">
-	<br>
-	<h1> Página inicial</h1>
+	<div align="center">
+		<br>
+		<h1> Página inicial</h1>
+		
 	
-
-	<img src="https://www.daninoce.com.br/wp-content/uploads/2018/11/9-receitas-deliciosas-de-naked-cake-dani-noce-destaque-960x625.jpg" alt="some text" width=760 height=425>
-</div>	
+		<img src="https://www.daninoce.com.br/wp-content/uploads/2018/11/9-receitas-deliciosas-de-naked-cake-dani-noce-destaque-960x625.jpg" alt="some text" width=760 height=425>
+	</div>	
 </body>
 </html>

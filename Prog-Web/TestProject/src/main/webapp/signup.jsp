@@ -135,11 +135,10 @@
 					String morada = request.getParameter("morada");
 					String tel = request.getParameter("nr_tel");
 					String datan = request.getParameter("datanasc");
-					int nif = Integer.parseInt(request.getParameter("nif"));
-					System.out.println(nome + "-" + email + "-" + pwd1 + "-" + pwd2);
+					String nif = request.getParameter("nif");
 					if(pwd1.length() >= 8){
 						try{
-							preparedStatement.setInt(1, nif);
+							preparedStatement.setInt(1, Integer.parseInt(nif));
 							preparedStatement.setString(2,email);
 							preparedStatement.setString(3,pwd1);
 							preparedStatement.setString(4,datan);

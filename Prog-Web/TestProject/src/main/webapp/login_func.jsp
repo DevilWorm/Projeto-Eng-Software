@@ -90,9 +90,44 @@
 		</thead>
 		</table>
 		<br>
-			<button class = "poggie" name = "login" href = "http://localhost:8080/TestProject/page_fun.jsp" value = null>Login!</button>
+			<button class = "poggie" name = "login" value = null>Login!</button>
 		</form>
 	</div>
+	<%
+			if(request.getParameter("login") != null){
+				String user = request.getParameter("user");
+				String pwd = request.getParameter("password");
+				
+				try{
+					Class.forName("com.mysql.cj.jdbc.Driver"); 
+					Connection conn = DriverManager.getConnection("jdbc:mysql://77.54.229.5:3306/epadaria","admin", "vasc1234");
+					Statement stat = conn.createStatement();
+					ResultSet rset = stat.executeQuery("select * from clientes");
+					boolean userCheck = false;
+					while(rset.next()){
+						//System.out.println(rset.getString(2) + "=" + user + "|" + rset.getString(3) + "=" + pwd);
+						if(rset.getString("nome").equals(user) && rset.getString("password").equals(pwd)){
+							//logged in!
+							System.out.println("Found a user!");
+							request.getSession().setAttribute("loggedInUser", user);
+							response.sendRedirect("http://localhost:8080/TestProject/page_func.jsp");
+							userCheck = true;
+						}
+					}
+					
+					if(userCheck == false){
+		%>
+					<p> Try signing a new account! </p>
+					<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp"> Sign Up </a>
+		<%}
+					
+					
+					System.out.println("Connected!");	
+				}catch(SQLException e) {
+					System.out.println("Bad Connection -" + e);
+				}
+			}
+		%>
 <br>
 <a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp">  Login In </a>
 	

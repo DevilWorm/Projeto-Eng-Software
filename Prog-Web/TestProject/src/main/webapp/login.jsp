@@ -19,40 +19,25 @@
 	  margin: auto;
 	}
 	body {
- 	 background-color:#f5ecd0;}
-
+ 	 background-color:#f5ecd0;
+ 	  h1   {color: #943939;}
+ 	}
+ 	.center {
+	    text-align: center;
+	}
+	.center > div, .center > table /* insert any other block-level elements here */ {
+	    margin-left: auto;
+	    margin-right: auto;
+	}
   
 
 </style>
 <% Class.forName("com.mysql.cj.jdbc.Driver");  %>
-<%!
-
-	public int getId(){
-		int currentId = -1;
-		try{
-			
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
-			Statement stat = conn.createStatement();
-			ResultSet rset = stat.executeQuery("select * from users");
-			
-			
-			while(rset.next()){
-				currentId = rset.getInt(1);
-			}
-			System.out.println("Connected!");	
-		}catch(SQLException e) {
-			System.out.println("Bad Connection -" + e);
-		}
-		return currentId + 1;
-	}
-
-%>
 <meta charset="ISO-8859-1">
 <title>Login Cliente</title>
 </head>
 <body>
-
-<div align="right">
+	<div align="right">
 		<table>
 		<thead>
 		<tr>
@@ -60,9 +45,10 @@
 				<a href="http://localhost:8080/TestProject/carrinho.jsp">
 				<img src="https://i.imgur.com/xvXkEV7.png" alt="some text" width=40 height=40>
 				</a>
+				
 			</th>
 			<th>
-				
+				<br>
 					<a class = "poggie" href = "http://localhost:8080/TestProject/login.jsp">  Login In </a>
 					<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp"> Sign Up </a>
 				
@@ -73,12 +59,10 @@
 	</div>
 	<br>
 	<center>
-		<center>
 		<a href="http://localhost:8080/TestProject/home_page.jsp">
 		<img src="https://i.imgur.com/sfDeVYR.png" alt="some text" width=192 height=96>
 		</a>
 
-	</center>
 	</center>
 	<br>
 	<center>
@@ -118,8 +102,8 @@
 		<br>
 			<button class = "poggie" name = "login" value = null>Login!</button>
 		</form>
-	</div>
-<br>
+	
+	<br>
 	<a style="color:#943939" href = "http://localhost:8080/TestProject/login_func.jsp"> Login Funcionário</a>
 	
 
@@ -132,14 +116,15 @@
 					Class.forName("com.mysql.cj.jdbc.Driver"); 
 					Connection conn = DriverManager.getConnection("jdbc:mysql://77.54.229.5:3306/epadaria","admin", "vasc1234");
 					Statement stat = conn.createStatement();
-					ResultSet rset = stat.executeQuery("select * from users");
+					ResultSet rset = stat.executeQuery("select * from clientes");
 					boolean userCheck = false;
 					while(rset.next()){
 						//System.out.println(rset.getString(2) + "=" + user + "|" + rset.getString(3) + "=" + pwd);
-						if(rset.getString(2).equals(user) && rset.getString(3).equals(pwd)){
+						if(rset.getString("nome").equals(user) && rset.getString("password").equals(pwd)){
 							//logged in!
 							System.out.println("Found a user!");
-							response.sendRedirect("http://localhost:8080/TestProject/page2.jsp");
+							request.getSession().setAttribute("loggedInUser", user);
+							response.sendRedirect("http://localhost:8080/TestProject/home_page.jsp");
 							userCheck = true;
 						}
 					}
@@ -158,6 +143,6 @@
 			}
 		%>
 		
-		
+		</div>
 </body>
 </html>
