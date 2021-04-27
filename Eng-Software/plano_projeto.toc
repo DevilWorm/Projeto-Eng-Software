@@ -44,8 +44,8 @@
 \contentsline {section}{\numberline {6.1}Standards}{13}{}%
 \contentsline {subsection}{\numberline {6.1.1}Organização do código}{13}{}%
 \contentsline {subsection}{\numberline {6.1.2}Especificação}{13}{}%
-\contentsline {subsection}{\numberline {6.1.3}Documentação}{13}{}%
-\contentsline {subsection}{\numberline {6.1.4}Métricas}{13}{}%
-\contentsline {subsection}{\numberline {6.1.5}Comentários}{13}{}%
-\contentsline {section}{\numberline {6.2}Técnicas}{13}{}%
-\contentsline {section}{\numberline {6.3}Ferramentas}{13}{}%
+\contentsline {subsection}{\numberline {6.1.3}Documentação}{14}{}%
+\contentsline {subsection}{\numberline {6.1.4}Métricas}{14}{}%
+\contentsline {subsection}{\numberline {6.1.5}Comentários}{14}{}%
+\contentsline {section}{\numberline {6.2}Técnicas}{14}{}%
+\contentsline {section}{\numberline {6.3}Ferramentas}{14}{}%
