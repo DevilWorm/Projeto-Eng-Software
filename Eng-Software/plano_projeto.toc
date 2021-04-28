@@ -49,3 +49,9 @@
 \contentsline {subsection}{\numberline {6.1.5}Comentários}{14}{}%
 \contentsline {section}{\numberline {6.2}Técnicas}{14}{}%
 \contentsline {section}{\numberline {6.3}Ferramentas}{14}{}%
+\contentsline {chapter}{\numberline {7}Plano de qualidade}{15}{}%
+\contentsline {subsection}{\numberline {7.0.1}Importância da qualidade em projetos de Software}{15}{}%
+\contentsline {subsection}{\numberline {7.0.2}Responsabilidades do gestor da qualidade}{15}{}%
+\contentsline {subsection}{\numberline {7.0.3}Padrões de referência}{15}{}%
+\contentsline {subsection}{\numberline {7.0.4}Métricas}{15}{}%
+\contentsline {chapter}{\numberline {8}Plano de gestão de configurações}{16}{}%
