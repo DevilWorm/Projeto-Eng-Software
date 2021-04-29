@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.28)  28 APR 2021 20:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.28)  29 APR 2021 19:08
 entering extended mode
 **./plano_projeto.tex
 (plano_projeto.tex
@@ -146,18 +146,36 @@ Chapter 6.
 
 ] [14]
 Chapter 7.
-) (plano_de_gestao_de_configuracoes.tex [15
+[15
 
 ]
+Overfull \hbox (77.36923pt too wide) in paragraph at lines 18--22
+\OT1/cmr/m/n/10 VER COMO SE COLOCA UMA HIPERLIGA[][]AO https://www.euax.com.br/
+2017/10/entenda-
+ []
+
+
+Overfull \hbox (23.6674pt too wide) in paragraph at lines 18--22
+\OT1/cmr/m/n/10 https://pt.linkedin.com/pulse/import^ancia-de-um-plano-qualidad
+e-software-e-testes-
+ []
+
+
+Overfull \hbox (13.00076pt too wide) in paragraph at lines 18--22
+\OT1/cmr/m/n/10 https://www.projectbuilder.com.br/blog/importancia-da-gestao-da
+-qualidade-em-
+ []
+
+) (plano_de_gestao_de_configuracoes.tex [16]
 Chapter 8.
-) (plano_projeto.bbl) [16
+) (plano_projeto.bbl) [17
 
 ] (plano_projeto.aux) ) 
 Here is how much of TeX's memory you used:
- 498 strings out of 479334
- 9583 string characters out of 2857084
+ 499 strings out of 479334
+ 9591 string characters out of 2857084
  301745 words of memory out of 3000000
- 17992 multiletter control sequences out of 15000+200000
+ 17993 multiletter control sequences out of 15000+200000
  409583 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,6n,50p,979b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -170,9 +188,9 @@ Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ritam/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/User
 s/ritam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb
 >
-Output written on plano_projeto.pdf (17 pages, 116810 bytes).
+Output written on plano_projeto.pdf (18 pages, 120584 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 89 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

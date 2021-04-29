@@ -52,6 +52,11 @@
 \contentsline {chapter}{\numberline {7}Plano de qualidade}{15}{}%
 \contentsline {subsection}{\numberline {7.0.1}Importância da qualidade em projetos de Software}{15}{}%
 \contentsline {subsection}{\numberline {7.0.2}Responsabilidades do gestor da qualidade}{15}{}%
-\contentsline {subsection}{\numberline {7.0.3}Padrões de referência}{15}{}%
-\contentsline {subsection}{\numberline {7.0.4}Métricas}{15}{}%
-\contentsline {chapter}{\numberline {8}Plano de gestão de configurações}{16}{}%
+\contentsline {subsection}{\numberline {7.0.3}Padrões de referência}{16}{}%
+\contentsline {subsection}{\numberline {7.0.4}Métricas}{16}{}%
+\contentsline {chapter}{\numberline {8}Plano de gestão de configurações}{17}{}%
+\contentsline {subsection}{\numberline {8.0.1}Enumeração de parâmetros e variáveis que podem alterar a forma como o sistema é usado ou apresentado}{17}{}%
+\contentsline {subsection}{\numberline {8.0.2}Descrição dos vários modos do sistema}{17}{}%
+\contentsline {subsubsection}{Administradores}{17}{}%
+\contentsline {subsubsection}{Utilizadores registados}{17}{}%
+\contentsline {subsubsection}{Público}{17}{}%
