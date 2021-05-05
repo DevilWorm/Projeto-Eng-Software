@@ -65,20 +65,20 @@
 \contentsline {chapter}{\numberline {9}Plano de Documentação}{20}{}%
 \contentsline {section}{\numberline {9.1}Enumeração dos documentos que será necessário produzir}{20}{}%
 \contentsline {section}{\numberline {9.2}Identificação do responsável pela sua redação e aprovação}{20}{}%
-\contentsline {section}{\numberline {9.3}Descrição de cada documento}{20}{}%
-\contentsline {subsection}{\numberline {9.3.1}Documento de especificação de requisitos}{20}{}%
-\contentsline {subsection}{\numberline {9.3.2}Plano de qualidade}{20}{}%
+\contentsline {section}{\numberline {9.3}Descrição de cada documento}{21}{}%
+\contentsline {subsection}{\numberline {9.3.1}Documento de especificação de requisitos}{21}{}%
+\contentsline {subsection}{\numberline {9.3.2}Plano de qualidade}{21}{}%
 \contentsline {subsection}{\numberline {9.3.3}Plano de gestão de dados}{21}{}%
 \contentsline {subsection}{\numberline {9.3.4}Plano de gestão de recursos}{21}{}%
 \contentsline {subsection}{\numberline {9.3.5}Plano de testes}{21}{}%
 \contentsline {subsection}{\numberline {9.3.6}Plano de formação}{21}{}%
-\contentsline {subsection}{\numberline {9.3.7}Plano de segurança}{21}{}%
-\contentsline {subsection}{\numberline {9.3.8}Plano de gestão de risco}{21}{}%
-\contentsline {subsection}{\numberline {9.3.9}Plano de manutenção}{21}{}%
-\contentsline {chapter}{\numberline {10}Plano de Gestão de dados}{22}{}%
-\contentsline {section}{\numberline {10.1}Descrição da forma como os dados são recolhidos, armazenados e manipulados}{22}{}%
-\contentsline {section}{\numberline {10.2}Apresentação da base de dados}{22}{}%
-\contentsline {section}{\numberline {10.3}Permissões de acesso a dados}{23}{}%
-\contentsline {section}{\numberline {10.4}Conformidade com o RGPD (GDPR)}{23}{}%
-\contentsline {section}{\numberline {10.5}Estado inicial da base de dados}{23}{}%
-\contentsline {section}{\numberline {10.6}Tarefas de carregamento/povoamento inicial de configurações de dados}{23}{}%
+\contentsline {subsection}{\numberline {9.3.7}Plano de segurança}{22}{}%
+\contentsline {subsection}{\numberline {9.3.8}Plano de gestão de risco}{22}{}%
+\contentsline {subsection}{\numberline {9.3.9}Plano de manutenção}{22}{}%
+\contentsline {chapter}{\numberline {10}Plano de Gestão de dados}{23}{}%
+\contentsline {section}{\numberline {10.1}Descrição da forma como os dados são recolhidos, armazenados e manipulados}{23}{}%
+\contentsline {section}{\numberline {10.2}Apresentação da base de dados}{23}{}%
+\contentsline {section}{\numberline {10.3}Permissões de acesso a dados}{24}{}%
+\contentsline {section}{\numberline {10.4}Conformidade com o RGPD (GDPR)}{24}{}%
+\contentsline {section}{\numberline {10.5}Estado inicial da base de dados}{24}{}%
+\contentsline {section}{\numberline {10.6}Tarefas de carregamento/povoamento inicial de configurações de dados}{24}{}%
