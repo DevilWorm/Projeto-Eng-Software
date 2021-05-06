@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.28)  5 MAY 2021 21:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.28)  6 MAY 2021 19:28
 entering extended mode
 **./plano_projeto.tex
 (plano_projeto.tex
@@ -131,16 +131,40 @@ Overfull \hbox (22.85962pt too wide) in paragraph at lines 23--23
 []\OT1/cmr/bx/n/14.4 Identificac~ao de ne-ces-si-dades de sub-con-tratac~ao 
  []
 
-) (descricao_tecnica_dos_sistemas.tex [11]
+) (descricao_tecnica_dos_sistemas.tex
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \usepackage
+               {graphicx}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[11]
 Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--9
+Underfull \hbox (badness 10000) in paragraph at lines 6--10
 
  []
 
 [12
 
-]) (standards_tecnicas_ferramentas.tex [13]
+]
+! Undefined control sequence.
+l.32 	\includegraphics
+                      {peixe}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) (standards_tecnicas_ferramentas.tex [13]
 Chapter 6.
 ) (plano_de_qualidade.tex [14
 
@@ -177,10 +201,10 @@ Overfull \hbox (4.13477pt too wide) in paragraph at lines 3--3
 
 ] [24] (plano_projeto.aux) ) 
 Here is how much of TeX's memory you used:
- 508 strings out of 479334
- 9968 string characters out of 2857084
+ 509 strings out of 479334
+ 9979 string characters out of 2857084
  304745 words of memory out of 3000000
- 17996 multiletter control sequences out of 15000+200000
+ 17997 multiletter control sequences out of 15000+200000
  409583 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,6n,50p,979b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -193,7 +217,7 @@ Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/r
 itam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:
 /Users/ritam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb>
-Output written on plano_projeto.pdf (25 pages, 130679 bytes).
+Output written on plano_projeto.pdf (25 pages, 130819 bytes).
 PDF statistics:
  112 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
