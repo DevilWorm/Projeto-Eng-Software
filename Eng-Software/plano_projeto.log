@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.28)  6 MAY 2021 19:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.28)  8 MAY 2021 16:36
 entering extended mode
 **./plano_projeto.tex
 (plano_projeto.tex
@@ -166,7 +166,12 @@ and I'll forget about whatever was undefined.
 
 ) (standards_tecnicas_ferramentas.tex [13]
 Chapter 6.
-) (plano_de_qualidade.tex [14
+) (plano_de_qualidade.tex
+Underfull \hbox (badness 10000) in paragraph at lines 19--1
+
+ []
+
+[14
 
 ] [15]
 Chapter 7.
@@ -217,7 +222,7 @@ Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/r
 itam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:
 /Users/ritam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb>
-Output written on plano_projeto.pdf (25 pages, 130819 bytes).
+Output written on plano_projeto.pdf (25 pages, 131320 bytes).
 PDF statistics:
  112 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
