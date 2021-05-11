@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.28)  11 MAY 2021 18:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.28)  10 MAY 2021 16:16
 entering extended mode
 **./plano_projeto.tex
 (plano_projeto.tex
@@ -22,31 +22,6 @@ File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
-(C:\Users\ritam\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
-
-(C:\Users\ritam\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks15
-)
-(C:\Users\ritam\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
-
-(C:\Users\ritam\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(C:\Users\ritam\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 105.
-
-(C:\Users\ritam\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen139
-\Gin@req@width=\dimen140
-)
 (C:\Users\ritam\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
@@ -55,52 +30,30 @@ File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
 ) (plano_projeto.aux)
 \openout1 = `plano_projeto.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-
-(C:\Users\ritam\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count189
-\scratchdimen=\dimen141
-\scratchbox=\box48
-\nofMPsegments=\count190
-\nofMParguments=\count191
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count192
-\MPscratchDim=\dimen142
-\MPnumerator=\count193
-\makeMPintoPDFobject=\count194
-\everyMPtoPDFconversion=\toks17
-)
-(C:\Users\ritam\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 7.
+(Font)              <12> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 7.
+(Font)              <8> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 7.
+(Font)              <6> on input line 6.
  [1
 
-{C:/Users/ritam/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-(plano_projeto.toc
+{C:/Users/ritam/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (plano_projeto.
+toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -178,187 +131,64 @@ Overfull \hbox (22.85962pt too wide) in paragraph at lines 23--23
 []\OT1/cmr/bx/n/14.4 Identificac~ao de ne-ces-si-dades de sub-con-tratac~ao 
  []
 
-) (descricao_tecnica_dos_sistemas.tex [10]
+) (descricao_tecnica_dos_sistemas.tex
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \usepackage
+               {graphicx}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[10]
 Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--10
 
  []
 
-<requisito_funcional1.png, id=43, 446.66875pt x 137.51375pt>
-File: requisito_funcional1.png Graphic file (type png)
-<use requisito_funcional1.png>
-Package pdftex.def Info: requisito_funcional1.png  used on input line 20.
-(pdftex.def)             Requested size: 446.66765pt x 137.51341pt.
-
-Overfull \hbox (101.66765pt too wide) in paragraph at lines 20--21
- [][] 
- []
-
 [11
 
 ]
-<requisito_funcional2.png, id=48, 445.665pt x 135.00438pt>
-File: requisito_funcional2.png Graphic file (type png)
-<use requisito_funcional2.png>
-Package pdftex.def Info: requisito_funcional2.png  used on input line 27.
-(pdftex.def)             Requested size: 445.66391pt x 135.00403pt.
+! Undefined control sequence.
+<recently read> \includegraphics 
+                                 
+l.28 	\includegraphics
+                      {gantt}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (100.66391pt too wide) in paragraph at lines 27--28
- [][] 
- []
-
-<requisito_funcional3.png, id=49, 447.6725pt x 161.10187pt>
-File: requisito_funcional3.png Graphic file (type png)
-<use requisito_funcional3.png>
-Package pdftex.def Info: requisito_funcional3.png  used on input line 34.
-(pdftex.def)             Requested size: 447.6714pt x 161.10147pt.
-
-Overfull \hbox (102.6714pt too wide) in paragraph at lines 34--35
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<requisito_funcional4.png, id=50, 449.17813pt x 118.94438pt>
-File: requisito_funcional4.png Graphic file (type png)
-<use requisito_funcional4.png>
-Package pdftex.def Info: requisito_funcional4.png  used on input line 41.
-(pdftex.def)             Requested size: 449.17703pt x 118.94408pt.
-
-Overfull \hbox (104.17703pt too wide) in paragraph at lines 41--42
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<requisito_nao_funcional1.png, id=51, 447.17062pt x 124.465pt>
-File: requisito_nao_funcional1.png Graphic file (type png)
-<use requisito_nao_funcional1.png>
-Package pdftex.def Info: requisito_nao_funcional1.png  used on input line 51.
-(pdftex.def)             Requested size: 447.16953pt x 124.46469pt.
-
-Overfull \hbox (102.16953pt too wide) in paragraph at lines 51--52
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<requisito_nao_funcional2.png, id=52, 447.6725pt x 210.28563pt>
-File: requisito_nao_funcional2.png Graphic file (type png)
-<use requisito_nao_funcional2.png>
-Package pdftex.def Info: requisito_nao_funcional2.png  used on input line 58.
-(pdftex.def)             Requested size: 447.6714pt x 210.28511pt.
-
-Overfull \hbox (102.6714pt too wide) in paragraph at lines 58--59
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<requisito_nao_funcional3.png, id=53, 444.66125pt x 159.59625pt>
-File: requisito_nao_funcional3.png Graphic file (type png)
-<use requisito_nao_funcional3.png>
-Package pdftex.def Info: requisito_nao_funcional3.png  used on input line 65.
-(pdftex.def)             Requested size: 444.66016pt x 159.59584pt.
-
-Overfull \hbox (99.66016pt too wide) in paragraph at lines 65--66
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<requisito_nao_funcional4.png, id=54, 451.18562pt x 151.56625pt>
-File: requisito_nao_funcional4.png Graphic file (type png)
-<use requisito_nao_funcional4.png>
-Package pdftex.def Info: requisito_nao_funcional4.png  used on input line 72.
-(pdftex.def)             Requested size: 451.18451pt x 151.56587pt.
-
-Overfull \hbox (106.18451pt too wide) in paragraph at lines 72--73
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<requisito_nao_funcional5.png, id=55, 445.665pt x 131.49126pt>
-File: requisito_nao_funcional5.png Graphic file (type png)
-<use requisito_nao_funcional5.png>
-Package pdftex.def Info: requisito_nao_funcional5.png  used on input line 79.
-(pdftex.def)             Requested size: 445.66391pt x 131.49092pt.
-
-Overfull \hbox (100.66391pt too wide) in paragraph at lines 79--80
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<requisito_nao_funcional6.png, id=56, 445.665pt x 130.4875pt>
-File: requisito_nao_funcional6.png Graphic file (type png)
-<use requisito_nao_funcional6.png>
-Package pdftex.def Info: requisito_nao_funcional6.png  used on input line 86.
-(pdftex.def)             Requested size: 445.66391pt x 130.48717pt.
-
-Overfull \hbox (100.66391pt too wide) in paragraph at lines 86--87
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<gantt.png, id=57, 203.76125pt x 714.67pt>
-File: gantt.png Graphic file (type png)
-<use gantt.png>
-Package pdftex.def Info: gantt.png  used on input line 99.
-(pdftex.def)             Requested size: 170.71652pt x 598.792pt.
-
-LaTeX Warning: Float too large for page by 72.73645pt on input line 102.
-
-) (standards_tecnicas_ferramentas.tex [12 <./requisito_funcional1.png> <./requi
-sito_funcional2.png>] [13 <./requisito_funcional3.png> <./requisito_funcional4.
-png> <./requisito_nao_funcional1.png>] [14 <./requisito_nao_funcional2.png> <./
-requisito_nao_funcional3.png>] [15 <./requisito_nao_funcional4.png> <./requisit
-o_nao_funcional5.png> <./requisito_nao_funcional6.png>] [16 <./gantt.png>]
+) (standards_tecnicas_ferramentas.tex [12]
 Chapter 6.
-[17
+[13
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 18--32
 
  []
 
-[18]) (plano_de_qualidade.tex
+[14]) (plano_de_qualidade.tex
 Underfull \hbox (badness 10000) in paragraph at lines 35--1
 
  []
 
-[19]
+[15]
 Chapter 7.
-[20
+[16
 
-]
-Overfull \hbox (23.6674pt too wide) in paragraph at lines 18--23
-\OT1/cmr/m/n/10 https://pt.linkedin.com/pulse/import^ancia-de-um-plano-qualidad
-e-software-e-testes-
- []
-
-
-Overfull \hbox (13.00076pt too wide) in paragraph at lines 18--23
-\OT1/cmr/m/n/10 https://www.projectbuilder.com.br/blog/importancia-da-gestao-da
--qualidade-em-
- []
-
-) (plano_de_gestao_de_configuracoes.tex [21]
+]) (plano_de_gestao_de_configuracoes.tex [17]
 Chapter 8.
-[22
+[18
 
-]) (plano_de_documentacao.tex [23]
+]) (plano_de_documentacao.tex [19]
 Chapter 9.
 
 Overfull \hbox (28.18303pt too wide) in paragraph at lines 4--4
@@ -370,26 +200,26 @@ Overfull \hbox (3.76962pt too wide) in paragraph at lines 8--8
 []\OT1/cmr/bx/n/14.4 Identificac~ao do re-sponsavel pela sua redac~ao
  []
 
-[24
+[20
 
-] [25]) (plano_de_gestao_de_dados.tex [26]
+] [21]) (plano_de_gestao_de_dados.tex [22]
 Chapter 10.
 
 Overfull \hbox (4.13477pt too wide) in paragraph at lines 3--3
 []\OT1/cmr/bx/n/14.4 Descric~ao da forma como os da-dos s~ao recol-
  []
 
-) (plano_projeto.bbl) [27
+) (plano_projeto.bbl) [23
 
-] [28] (plano_projeto.aux) ) 
+] [24] (plano_projeto.aux) ) 
 Here is how much of TeX's memory you used:
- 1373 strings out of 479334
- 23236 string characters out of 2857084
- 316023 words of memory out of 3000000
- 18828 multiletter control sequences out of 15000+200000
+ 510 strings out of 479334
+ 9994 string characters out of 2857084
+ 303745 words of memory out of 3000000
+ 17998 multiletter control sequences out of 15000+200000
  409583 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,6n,74p,979b,227s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,6n,50p,979b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\ritam\AppData\Local\MiKTeX\fonts/pk/ljfo
 ur/jknappen/ec/dpi600\tcbx1000.pk><C:/Users/ritam/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/ritam/AppData/Local/Progra
@@ -399,9 +229,9 @@ Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/r
 itam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:
 /Users/ritam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb>
-Output written on plano_projeto.pdf (29 pages, 1070378 bytes).
+Output written on plano_projeto.pdf (25 pages, 133334 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
+ 112 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
