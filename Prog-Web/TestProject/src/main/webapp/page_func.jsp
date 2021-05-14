@@ -50,12 +50,12 @@
 <br>
 <h3> Produtos</h3>
 
-<a class = "poggie" href = "http://localhost:8080/TestProject/insert_produto.jsp"> Inserir Produto </a>
+<a class = "poggie" href = "http://localhost:8080/TestProject/addproduto.jsp"> Inserir Produto </a>
 <a class = "poggie" href = "http://localhost:8080/TestProject/insert_produto.jsp"> Eliminar</a>
 
 <br>
 <h3> Pedidos</h3>
-<a class = "poggie" href = "http://localhost:8080/TestProject/insert_produto.jsp"> Pedidos em espera </a>
+<a class = "poggie" href = "http://localhost:8080/TestProject/inse_produto.jsp"> Pedidos em espera </a>
 <a class = "poggie" href = "http://localhost:8080/TestProject/insert_produto.jsp"> Histórico de pedidos </a>
 
 </body>
