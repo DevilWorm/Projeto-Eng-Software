@@ -55,6 +55,8 @@
 
 <br>
 <h3> Pedidos</h3>
+
+<a class = "poggie" href = "http://localhost:8080/TestProject/inse_produto.jsp"> Adicionar pedido </a>
 <a class = "poggie" href = "http://localhost:8080/TestProject/inse_produto.jsp"> Pedidos em espera </a>
 <a class = "poggie" href = "http://localhost:8080/TestProject/insert_produto.jsp"> Histórico de pedidos </a>
 
