@@ -76,12 +76,23 @@
 	</center>
 	<div align="center">
 		<h2> Qual é o nosso objetivo?</h2>
+		<table  width="70%" cellpadding="8" >
+		 
+		 	<thead>
+		  	<tr>
 		
-		<p> O nosso sistema tem como objetivo ajudar as padarias de pequena dimensão a melhor se organizarem</p>
-		<img src="https://i.imgur.com/SzCvht1.jpg" width=240 height=300>
-		<br>
-		<h2> História</h2>
-		<p> O ePadaria veio do inicio de um projeto pela cadeira de Desenho e Analise de Sistemas e que ahora deu continuidade com as cadeiras de Base de dados e Programação para web.</p>
+				<th><p> O nosso sistema tem como objetivo ajudar as padarias de pequena dimensão a melhor organizarem o seu negócio e ajudar os clientes dos mesmos a mais facilmente fazerem os seus pedidos.</p></th>
+			</tr>
+			
+				<th><h2> História</h2></th>
+			</tr>
+		
+			<tr>
+				<th><p> O ePadaria veio do inicio de um projeto pela cadeira de Desenho e Analise de Sistemas e que agora deu continuidade com as cadeiras de Base de dados e Programação para web.</p></th>
+			</tr>
+			 </thead>
+		  </table>
+		
 		</div>
 	
 </body>
