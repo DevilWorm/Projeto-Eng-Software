@@ -124,7 +124,7 @@
 							//logged in!
 							System.out.println("Found a user!");
 							request.getSession().setAttribute("loggedInUser", user);
-							response.sendRedirect("http://localhost:8080/TestProject/home_page.jsp");
+							//response.sendRedirect("http://localhost:8080/TestProject/home_page.jsp");
 							userCheck = true;
 						}
 					}
