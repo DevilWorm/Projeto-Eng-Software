@@ -4,9 +4,8 @@
 
 \section{Resumo da Especificação de requisitos}
 Com a aplicação do sistema ePadaria vai se promover e otimizar a comunicação e funcionamento dos 3 setores, pedidos, cozinha e entregas.\\
-Na gestão de pedidos, o gestor de pedidos, só terá que preencher dados na aplicação ePadaria, esta que trata de comunicar e verificar os stocks e também pedidos anteriores, que certifica que haverá espaço para o pedido no dia alocado, e dando ao gestor de pedidos imediatamente uma validação do pedido ou
-refere o que estava invalido no pedido.\\
-Na gestão de pedidos, o gestor de pedidos, só terá que preencher dados na aplicação ePadaria, esta que trata de comunicar e verificar os stocks e também pedidos anteriores, que certifica que haverá espaço para o pedido no dia alocado, e dando ao gestor de pedidos imediatamente uma validação do pedido ou refere o que estava invalido no pedido.\\
+Na gestão de pedidos, o gestor de pedidos, só terá que preencher dados na aplicação ePadaria, esta que trata de comunicar e verificar o stock e também pedidos anteriores, que certifica que haverá espaço para o pedido no dia alocado, e dando ao gestor de pedidos imediatamente uma validação do pedido ou refere o que estava invalido no pedido.\\
+Na gestão de pedidos, o gestor de pedidos, só terá que preencher dados na aplicação ePadaria, esta que trata de comunicar e verificar o stock e também pedidos anteriores, que certifica que haverá espaço para o pedido no dia alocado, e dando ao gestor de pedidos imediatamente uma validação do pedido ou refere o que estava invalido no pedido.\\
 
 
 \section{Descrição do software que será necessário desenvolver}
@@ -22,7 +21,7 @@ Na figura abaixo representa-se o modelo genérico de casos de uso do sistema ePa
 \end{figure}
 
 \subsubsection{Requisitos}
-Lista de requisitos para o caso de uso Receção de um pedido feito no site\\
+Lista de requisitos para o caso de uso Receção de um pedido feito no site.\\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=15cm]{requisito_funcional1}
@@ -51,7 +50,7 @@ Lista de requisitos para o caso de uso Receção de um pedido feito no site\\
 	\label{fig:requisitofuncional4}
 \end{figure}
 
-Lista de requisitos para o caso de uso Receção de um pedido efetuado por telefone\\
+Lista de requisitos para o caso de uso Receção de um pedido efetuado por telefone.\\
 
 \begin{figure}[H]
 	\centering
@@ -76,12 +75,12 @@ Lista de requisitos para o caso de uso Receção de um pedido efetuado por telef
 	\label{fig:requisitofuncional7}
 \end{figure}
 
-Lista de requisitos para o caso de uso Receção de um pedido efetuado por e-mail\\
+Lista de requisitos para o caso de uso Receção de um pedido efetuado por e-mail.\\
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=15cm]{requisitofuncional8}
-	\caption{Requisito funcional Acesso a dispositivo eletrónico}
+	\caption{Requisito funcional acesso a dispositivo eletrónico}
 	\label{fig:requisitofuncional8}
 \end{figure}
 
@@ -125,14 +124,27 @@ Lista de requisitos para o caso de uso Receção de um pedido efetuado por e-mai
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=15cm]{requisito_nao_funcional6}
-	\caption{Requisito não funcional Manutençaõ}
+	\caption{Requisito não funcional Manutenção}
 	\label{fig:requisitonaofuncional6}
 \end{figure}
 
 \section{Descrição do estrutura física do hardware}
-Para se poder usar o site será mais viavél o seu uso num computador ou tablet que em um telemóvel devido á sua estrutura e ter sido destinado mais para uso no computador. \\
-Não é necessário se ter um dispositivo de alto desempenho para se poder aceder ao site e ser usado,apenas é necessário ter os requisitos minimos.\\
-Por parte dos funcionários da padaria o melhor é usar algo e pelo menos médio desempenho de maneira a o sistema responder de forma rápida e não atrasar a produtividade.
+A maneira mais viável de efeituar o seu uso, seria num computador ou tablet, porque devido á estrutura mais pequena do telemóvel é mais difícil de usar, logo foi desenhado mais para uso no computador e nos seus "browsers". \\
+Não é necessário ter um dispositivo de alto desempenho para se poder aceder ao site e ser usado, apenas é necessário ter os requisitos mínimos.\\
+De acordo com um documento de \textbf{Requisitos de aplicação Web da Microsoft}, os \textbf{requisitos mínimos e recomendados de hardware} são:\\
+\\ \textbf{Mínimo}\\
+\\Processador - Processador dual core x86 ou x64 bits de 1,9 gigahertz (GHz) com conjunto de instruções SSE2.\\
+\\Memória - 2 GB de RAM. \\
+\\Monitor - Super VGA com uma resolução de 1024 x 768. \\
+\\ \textbf{Recomendado}\\
+\\Processador - Processador dual core 64 bits de 3,3 gigahertz (GHz) ou mais rápido com conjunto de instruções SSE2.\\
+\\Memória - 4 GB de RAM ou mais.\\
+\\Monitor - 	Super VGA com uma resolução de 1024 x 768.\\
+\\"A execução de aplicações condicionadas por modelos num computador com uma configuração inferior aos requisitos recomendados pode originar um desempenho inadequado. Além disso, poderá verificar-se um desempenho satisfatório na execução de sistemas que utiliza, uma configuração de hardware diferente da aqui publicada, por exemplo, um sistema de com um processador quad-core moderno, velocidade de relógio inferior e mais RAM."\\
+\\Os \textbf{requisitos de rede} não são muito pesados devido á natureza do sistema, mas é recomendado na mesma no mínimo :\\
+\\- Mais de 50 kbps (400 kbps) de largura de banda\\
+\\- Latência abaixo de 150 ms\\
+\\Por parte dos funcionários da padaria o melhor é usar algo e pelo menos médio desempenho de maneira a o sistema responder de forma rápida e não atrasar a produtividade.
 
 Colocar diagrama de distribuição!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -140,7 +152,7 @@ Colocar diagrama de distribuição!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 \section{Descrição da interface gráfica}
 
-A interface gráfica do ePadaria tem em conta a usabilidade e o necessário para atender as espectativas visuais dos nossos clientes e dos clientes das padarias. Em qualquer parte do site será possível aceder à página inicial, aos contactos, “sobre nós" onde se encontra informação sobre o ePadaria, apenas não será possível aceder a essas páginas pela página do funcionário.
+A interface gráfica do ePadaria tem em conta a usabilidade e o necessário para atender as expectativas visuais dos nossos clientes e dos clientes das padarias. Em qualquer parte do site será possível aceder à página inicial, aos contactos, “sobre nós" onde se encontra informação sobre o ePadaria, apenas não será possível aceder a essas páginas pela página do funcionário.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=15cm]{"mockup sobre nos"}
@@ -152,12 +164,12 @@ A interface gráfica do ePadaria tem em conta a usabilidade e o necessário para
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=15cm]{"mockup sig in"}
-	\caption{Página Web do ePadaria: Sign in}
+	\caption{Página Web do ePadaria: Sign Up}
 	\label{fig:mockup-sig-in}
 \end{figure}
 
 
-Ao efetuar o log in o icone "Log in" irá aparecer com o nome do cliente, para o funcionário quando entra na página do funcionário irá aparecer com o nome após o "Bem-vindo" . O funcionário para aceder ao log in tem de aceder à mesma página que o funcionário e de seguida clicar em "Log In funcionário".
+Ao efetuar o "login", o icone "Login" irá aparecer com o nome do cliente que definiu no site, para o funcionário quando entra na página para si, irá aparecer com o nome após o "Bem-vindo". O funcionário para aceder ao seu "login tem de aceder à mesma página que o funcionário e de seguida clicar em "Log In funcionário".
  
  
 \begin{figure}[H]
