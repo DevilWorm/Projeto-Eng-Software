@@ -49,7 +49,7 @@
 			</th>
 			<th>
 				<br>
-					<a class = "poggie" href = "http://localhost:8080/TestProject/login.jsp">  Login In </a>
+					<a class = "poggie" href = "http://localhost:8080/TestProject/login.jsp">  Login </a>
 					<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp"> Sign Up </a>
 				
 			</th>

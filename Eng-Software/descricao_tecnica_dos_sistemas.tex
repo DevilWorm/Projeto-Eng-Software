@@ -1,9 +1,8 @@
-
 \chapter{Descrição técnica dos sistemas}
 \label{descricao_tecnica_dos_sistemas}
 
 \section{Resumo da Especificação de requisitos}
-Com a aplicação do sistema ePadaria vai se promover e otimizar a comunicação e funcionamento dos 3 setores, pedidos, cozinha e entregas.\\
+Com a aplicação da sistema ePadaria vai se promover e otimizar a comunicação e funcionamento dos 3 setores, pedidos, cozinha e entregas.\\
 Na gestão de pedidos, o gestor de pedidos, só terá que preencher dados na aplicação ePadaria, esta que trata de comunicar e verificar o stock e também pedidos anteriores, que certifica que haverá espaço para o pedido no dia alocado, e dando ao gestor de pedidos imediatamente uma validação do pedido ou refere o que estava invalido no pedido.\\
 Na gestão de pedidos, o gestor de pedidos, só terá que preencher dados na aplicação ePadaria, esta que trata de comunicar e verificar o stock e também pedidos anteriores, que certifica que haverá espaço para o pedido no dia alocado, e dando ao gestor de pedidos imediatamente uma validação do pedido ou refere o que estava invalido no pedido.\\
 
@@ -144,51 +143,84 @@ De acordo com um documento de \textbf{Requisitos de aplicação Web da Microsoft
 \\Os \textbf{requisitos de rede} não são muito pesados devido á natureza do sistema, mas é recomendado na mesma no mínimo :\\
 \\- Mais de 50 kbps (400 kbps) de largura de banda\\
 \\- Latência abaixo de 150 ms\\
-\\Por parte dos funcionários da padaria o melhor é usar algo e pelo menos médio desempenho de maneira a o sistema responder de forma rápida e não atrasar a produtividade.
+\\Por parte dos funcionários da padaria o melhor é usar algo e pelo menos médio desempenho de maneira a o sistema responder de forma rápida e não atrasar a produtividade.\\
 
-Colocar diagrama de distribuição!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm]{Diagarama_Dist}
+	\caption{Diagrama de distribuição}
+	\label{fig:Diagarama_Dist}
+\end{figure}
 
 
 \section{Descrição da interface gráfica}
 
-A interface gráfica do ePadaria tem em conta a usabilidade e o necessário para atender as expectativas visuais dos nossos clientes e dos clientes das padarias. Em qualquer parte do site será possível aceder à página inicial, aos contactos, “sobre nós" onde se encontra informação sobre o ePadaria, apenas não será possível aceder a essas páginas pela página do funcionário.
+A interface gráfica da ePadaria tem em conta a usabilidade e o necessário para atender as expectativas visuais dos nossos clientes e dos clientes das padarias. Em qualquer parte do site será possível aceder à página inicial, aos contactos, “sobre nós" onde se encontra informação sobre o ePadaria, apenas não será possível aceder a essas páginas pela página do funcionário.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=15cm]{"mockup sobre nos"}
-	\caption{Página Web do ePadaria: Sobre nós}
+	\caption{Página Web da ePadaria: Sobre nós}
 	\label{fig:mockup-sobre-nos}
 \end{figure}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm]{Contactos}
+	\caption{Página Web da ePadaria: Contactos}
+	\label{fig:Contactos}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm]{Produtos1}
+	\caption{Página Web da ePadaria: Mensagem de aviso}
+	\label{fig:produtos1}
+\end{figure}
+
+Se um utilizador carregar em produtos ou no carrinho sem estar "logged in", aparece esta mensagem de aviso/erro para procederem a fazer o "login" ou "sign up".
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=15cm]{"mockup sig in"}
-	\caption{Página Web do ePadaria: Sign Up}
+	\caption{Página Web da ePadaria: Sign Up}
 	\label{fig:mockup-sig-in}
 \end{figure}
 
+O sistema "sign up" que definimos com os campos que tem de ser preenchidos e de seguida, estes mesmos dados entram na nossa base de dados e os clientes ficam registados.
 
-Ao efetuar o "login", o icone "Login" irá aparecer com o nome do cliente que definiu no site, para o funcionário quando entra na página para si, irá aparecer com o nome após o "Bem-vindo". O funcionário para aceder ao seu "login tem de aceder à mesma página que o funcionário e de seguida clicar em "Log In funcionário".
- 
- 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=15cm]{"mockup log in"}
-	\caption{Página Web do ePadaria: Log in}
+	\caption{Página Web da ePadaria: Log in}
 	\label{fig:mockup-log-in}
 \end{figure}
+
+Após efetuar o "login", o ícone "Login"  irá aparecer com o nome do cliente que definiu no site.\\
+Se o funcionário quiser entrar na página definida para si, terá que aceder ao "login"  e de seguida escolher a opção  "LogIn Funcionário".
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=15cm]{"mockup page func"}
-	\caption{Página Web do ePadaria: Página do funcionário}
+	\caption{Página Web da ePadaria: Página do funcionário}
 	\label{fig:mockup-page-func}
 \end{figure}
 
+De seguida irá aparecer uma mensagem com o nome do funcionário após o "Bem-vindo".\\
+Aqui o funcionário vai ter a opção de mexer no stock registado na base de dados, podendo assim gerir o sistema de maneira fácil e simples.
+O funcionário também vai poder mexer com os pedidos, podendo registar os feitos e realizados, os que estão á espera de ser entregues e o histórico dos mesmos.\\
 
-O cliente tem acesso aos produtos do site para efetuar o seu pedido. O funcionário pode também adicionar pedidos aos quais recebe por telemóvel ou email.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm]{produtos33}
+	\caption{Página Web da ePadaria: Histórico de pedidos }
+	\label{fig:produtos33}
+\end{figure}
+Após efetuar o login de funcionário, ele mesmo poderá aceder ao histórico de pedidos feitos na sua padaria para a gerir.
 
-COLOCAR MOCKUP !!!!!!!!!!!!!!
-
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm]{produtos2}
+	\caption{Página Web da ePadaria: Carrinho/Comprar}
+	\label{fig:produtos2}
+\end{figure}
+Nesta imagem temos um mock-up muito inicial do carrinho após o "login" e ter carregado no cesto/carrinho de compras.

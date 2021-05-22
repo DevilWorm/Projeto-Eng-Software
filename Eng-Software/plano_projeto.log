@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.2)  22 MAY 2021 17:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.2)  22 MAY 2021 18:51
 entering extended mode
 **./plano_projeto.tex
 (plano_projeto.tex
@@ -247,14 +247,14 @@ Cap\'{\i }tulo 4.
 ]) (descricao_tecnica_dos_sistemas.tex [12]
 Cap\'{\i }tulo 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--9
+Underfull \hbox (badness 10000) in paragraph at lines 5--8
 
  []
 
 <diagrama_casos_de_uso.png, id=53, 318.69063pt x 187.19937pt>
 File: diagrama_casos_de_uso.png Graphic file (type png)
 <use diagrama_casos_de_uso.png>
-Package pdftex.def Info: diagrama_casos_de_uso.png  used on input line 18.
+Package pdftex.def Info: diagrama_casos_de_uso.png  used on input line 17.
 (pdftex.def)             Requested size: 318.68983pt x 187.19891pt.
 [13
 
@@ -262,25 +262,25 @@ Package pdftex.def Info: diagrama_casos_de_uso.png  used on input line 18.
 <requisito_funcional1.png, id=57, 446.66875pt x 137.51375pt>
 File: requisito_funcional1.png Graphic file (type png)
 <use requisito_funcional1.png>
-Package pdftex.def Info: requisito_funcional1.png  used on input line 27.
+Package pdftex.def Info: requisito_funcional1.png  used on input line 26.
 (pdftex.def)             Requested size: 426.79134pt x 131.3969pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 27--28
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 26--27
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--30
+Underfull \hbox (badness 10000) in paragraph at lines 23--29
 
  []
 
 <requisito_funcional2.png, id=58, 445.665pt x 135.00438pt>
 File: requisito_funcional2.png Graphic file (type png)
 <use requisito_funcional2.png>
-Package pdftex.def Info: requisito_funcional2.png  used on input line 34.
+Package pdftex.def Info: requisito_funcional2.png  used on input line 33.
 (pdftex.def)             Requested size: 426.79134pt x 129.28752pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 34--35
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 33--34
  [][] 
  []
 
@@ -288,35 +288,35 @@ Overfull \hbox (81.79134pt too wide) in paragraph at lines 34--35
 <requisito_funcional3.png, id=64, 447.6725pt x 161.10187pt>
 File: requisito_funcional3.png Graphic file (type png)
 <use requisito_funcional3.png>
-Package pdftex.def Info: requisito_funcional3.png  used on input line 41.
+Package pdftex.def Info: requisito_funcional3.png  used on input line 40.
 (pdftex.def)             Requested size: 426.79134pt x 153.59163pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 41--42
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 40--41
  [][] 
  []
 
 <requisito_funcional4.png, id=65, 449.17813pt x 118.94438pt>
 File: requisito_funcional4.png Graphic file (type png)
 <use requisito_funcional4.png>
-Package pdftex.def Info: requisito_funcional4.png  used on input line 48.
+Package pdftex.def Info: requisito_funcional4.png  used on input line 47.
 (pdftex.def)             Requested size: 426.79134pt x 113.0201pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 48--49
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 47--48
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
 <requisitofuncional5.png, id=66, 298.61563pt x 121.95563pt>
 File: requisitofuncional5.png Graphic file (type png)
 <use requisitofuncional5.png>
-Package pdftex.def Info: requisitofuncional5.png  used on input line 57.
+Package pdftex.def Info: requisitofuncional5.png  used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 174.31517pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 57--58
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 56--57
  [][] 
  []
 
@@ -325,45 +325,45 @@ ional4.png>]
 <requisitofuncional6.png, id=73, 300.12125pt x 111.91812pt>
 File: requisitofuncional6.png Graphic file (type png)
 <use requisitofuncional6.png>
-Package pdftex.def Info: requisitofuncional6.png  used on input line 64.
+Package pdftex.def Info: requisitofuncional6.png  used on input line 63.
 (pdftex.def)             Requested size: 426.79134pt x 159.16733pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 64--65
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 63--64
  [][] 
  []
 
 <requisitofuncional7.png, id=74, 301.62688pt x 115.43124pt>
 File: requisitofuncional7.png Graphic file (type png)
 <use requisitofuncional7.png>
-Package pdftex.def Info: requisitofuncional7.png  used on input line 73.
+Package pdftex.def Info: requisitofuncional7.png  used on input line 72.
 (pdftex.def)             Requested size: 426.79134pt x 163.33049pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 73--74
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 72--73
  [][] 
  []
 
 [16 <./requisitofuncional5.png> <./requisitofuncional6.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
 <requisitofuncional8.png, id=80, 299.61937pt x 99.87312pt>
 File: requisitofuncional8.png Graphic file (type png)
 <use requisitofuncional8.png>
-Package pdftex.def Info: requisitofuncional8.png  used on input line 82.
+Package pdftex.def Info: requisitofuncional8.png  used on input line 81.
 (pdftex.def)             Requested size: 426.79134pt x 142.27495pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 82--83
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 81--82
  [][] 
  []
 
 <requisito_nao_funcional1.png, id=81, 447.17062pt x 124.465pt>
 File: requisito_nao_funcional1.png Graphic file (type png)
 <use requisito_nao_funcional1.png>
-Package pdftex.def Info: requisito_nao_funcional1.png  used on input line 91.
+Package pdftex.def Info: requisito_nao_funcional1.png  used on input line 90.
 (pdftex.def)             Requested size: 426.79134pt x 118.79562pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 91--92
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 90--91
  [][] 
  []
 
@@ -371,20 +371,20 @@ Overfull \hbox (81.79134pt too wide) in paragraph at lines 91--92
 <requisito_nao_funcional2.png, id=87, 447.6725pt x 210.28563pt>
 File: requisito_nao_funcional2.png Graphic file (type png)
 <use requisito_nao_funcional2.png>
-Package pdftex.def Info: requisito_nao_funcional2.png  used on input line 98.
+Package pdftex.def Info: requisito_nao_funcional2.png  used on input line 97.
 (pdftex.def)             Requested size: 426.79134pt x 200.48253pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 98--99
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 97--98
  [][] 
  []
 
 <requisito_nao_funcional3.png, id=88, 444.66125pt x 159.59625pt>
 File: requisito_nao_funcional3.png Graphic file (type png)
 <use requisito_nao_funcional3.png>
-Package pdftex.def Info: requisito_nao_funcional3.png  used on input line 105.
+Package pdftex.def Info: requisito_nao_funcional3.png  used on input line 104.
 (pdftex.def)             Requested size: 426.79134pt x 153.18141pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 105--106
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 104--105
  [][] 
  []
 
@@ -392,195 +392,293 @@ Overfull \hbox (81.79134pt too wide) in paragraph at lines 105--106
 <requisito_nao_funcional4.png, id=95, 451.18562pt x 151.56625pt>
 File: requisito_nao_funcional4.png Graphic file (type png)
 <use requisito_nao_funcional4.png>
-Package pdftex.def Info: requisito_nao_funcional4.png  used on input line 112.
+Package pdftex.def Info: requisito_nao_funcional4.png  used on input line 111.
 (pdftex.def)             Requested size: 426.79134pt x 143.37886pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 112--113
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 111--112
  [][] 
  []
 
 <requisito_nao_funcional5.png, id=96, 445.665pt x 131.49126pt>
 File: requisito_nao_funcional5.png Graphic file (type png)
 <use requisito_nao_funcional5.png>
-Package pdftex.def Info: requisito_nao_funcional5.png  used on input line 119.
+Package pdftex.def Info: requisito_nao_funcional5.png  used on input line 118.
 (pdftex.def)             Requested size: 426.79134pt x 125.92317pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 119--120
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 118--119
  [][] 
  []
 
 <requisito_nao_funcional6.png, id=97, 445.665pt x 130.4875pt>
 File: requisito_nao_funcional6.png Graphic file (type png)
 <use requisito_nao_funcional6.png>
-Package pdftex.def Info: requisito_nao_funcional6.png  used on input line 126.
+Package pdftex.def Info: requisito_nao_funcional6.png  used on input line 125.
 (pdftex.def)             Requested size: 426.79134pt x 124.96193pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 126--127
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 125--126
  [][] 
  []
 
 [19 <./requisito_nao_funcional3.png> <./requisito_nao_funcional4.png> <./requis
 ito_nao_funcional5.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 132--148
+Underfull \hbox (badness 10000) in paragraph at lines 131--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--148
+Underfull \hbox (badness 10000) in paragraph at lines 131--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--148
+Underfull \hbox (badness 10000) in paragraph at lines 131--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--148
+Underfull \hbox (badness 10000) in paragraph at lines 131--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--148
+Underfull \hbox (badness 10000) in paragraph at lines 131--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--148
+Underfull \hbox (badness 10000) in paragraph at lines 131--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--148
+Underfull \hbox (badness 10000) in paragraph at lines 131--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--148
+Underfull \hbox (badness 10000) in paragraph at lines 131--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--148
+Underfull \hbox (badness 10000) in paragraph at lines 131--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--148
+Underfull \hbox (badness 10000) in paragraph at lines 131--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--148
+Underfull \hbox (badness 10000) in paragraph at lines 131--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--148
+Underfull \hbox (badness 10000) in paragraph at lines 131--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--148
+Underfull \hbox (badness 10000) in paragraph at lines 131--147
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--147
 
  []
 
 [20 <./requisito_nao_funcional6.png>]
-<mockup sobre nos.png, id=108, 961.5925pt x 433.62pt>
+<Diagarama_Dist.png, id=108, 554.07pt x 283.0575pt>
+File: Diagarama_Dist.png Graphic file (type png)
+<use Diagarama_Dist.png>
+Package pdftex.def Info: Diagarama_Dist.png  used on input line 150.
+(pdftex.def)             Requested size: 426.79134pt x 218.037pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 150--151
+ [][] 
+ []
+
+<mockup sobre nos.png, id=109, 1442.38875pt x 650.43pt>
 File: mockup sobre nos.png Graphic file (type png)
 <use mockup sobre nos.png>
-Package pdftex.def Info: mockup sobre nos.png  used on input line 158.
-(pdftex.def)             Requested size: 426.79134pt x 192.46074pt.
+Package pdftex.def Info: mockup sobre nos.png  used on input line 161.
+(pdftex.def)             Requested size: 426.79134pt x 192.45082pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 158--159
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 161--162
  [][] 
  []
 
-<mockup sig in.png, id=109, 967.11313pt x 456.20438pt>
+[21 <./Diagarama_Dist.png>]
+<Contactos.png, id=114, 1405.50093pt x 667.74469pt>
+File: Contactos.png Graphic file (type png)
+<use Contactos.png>
+Package pdftex.def Info: Contactos.png  used on input line 168.
+(pdftex.def)             Requested size: 426.79134pt x 202.7601pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 168--169
+ [][] 
+ []
+
+<Produtos1.png, id=115, 1406.25375pt x 668.4975pt>
+File: Produtos1.png Graphic file (type png)
+<use Produtos1.png>
+Package pdftex.def Info: Produtos1.png  used on input line 175.
+(pdftex.def)             Requested size: 426.79134pt x 202.8765pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 175--176
+ [][] 
+ []
+
+[22 <./mockup sobre nos.png> <./Contactos.png>]
+<mockup sig in.png, id=120, 1450.6697pt x 684.30656pt>
 File: mockup sig in.png Graphic file (type png)
 <use mockup sig in.png>
-Package pdftex.def Info: mockup sig in.png  used on input line 166.
-(pdftex.def)             Requested size: 426.79134pt x 201.32224pt.
-
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 166--167
- [][] 
- []
-
-[21 <./mockup sobre nos.png>]
-<mockup log in.png, id=114, 959.08313pt x 455.7025pt>
-File: mockup log in.png Graphic file (type png)
-<use mockup log in.png>
-Package pdftex.def Info: mockup log in.png  used on input line 177.
-(pdftex.def)             Requested size: 426.79134pt x 202.79044pt.
-
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 177--178
- [][] 
- []
-
-<mockup page func.png, id=115, 961.09062pt x 446.16687pt>
-File: mockup page func.png Graphic file (type png)
-<use mockup page func.png>
-Package pdftex.def Info: mockup page func.png  used on input line 184.
-(pdftex.def)             Requested size: 426.79134pt x 198.13174pt.
+Package pdftex.def Info: mockup sig in.png  used on input line 184.
+(pdftex.def)             Requested size: 426.79134pt x 201.32571pt.
 
 Overfull \hbox (81.79134pt too wide) in paragraph at lines 184--185
  [][] 
  []
 
-[22 <./mockup sig in.png> <./mockup log in.png>])
-(standards_tecnicas_ferramentas.tex [23 <./mockup page func.png>]
+<mockup log in.png, id=121, 1438.6247pt x 683.55376pt>
+File: mockup log in.png Graphic file (type png)
+<use mockup log in.png>
+Package pdftex.def Info: mockup log in.png  used on input line 193.
+(pdftex.def)             Requested size: 426.79134pt x 202.7835pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 193--194
+ [][] 
+ []
+
+[23 <./Produtos1.png> <./mockup sig in.png>]
+<mockup page func.png, id=126, 961.09062pt x 446.16687pt>
+File: mockup page func.png Graphic file (type png)
+<use mockup page func.png>
+Package pdftex.def Info: mockup page func.png  used on input line 203.
+(pdftex.def)             Requested size: 426.79134pt x 198.13174pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 203--204
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--211
+
+ []
+
+[24 <./mockup log in.png> <./mockup page func.png>]
+<produtos33.png, id=132, 547.2947pt x 295.85532pt>
+File: produtos33.png Graphic file (type png)
+<use produtos33.png>
+Package pdftex.def Info: produtos33.png  used on input line 214.
+(pdftex.def)             Requested size: 426.79134pt x 230.71655pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 214--215
+ [][] 
+ []
+
+<produtos2.png, id=133, 529.22719pt x 324.46219pt>
+File: produtos2.png Graphic file (type png)
+<use produtos2.png>
+Package pdftex.def Info: produtos2.png  used on input line 222.
+(pdftex.def)             Requested size: 426.79134pt x 261.65936pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 222--223
+ [][] 
+ []
+
+[25 <./produtos33.png>]) (standards_tecnicas_ferramentas.tex [26 <./produtos2.p
+ng>]
 Cap\'{\i }tulo 6.
-[24
+[27
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 18--32
 
  []
 
-[25]) (plano_de_qualidade.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--32
+
+ []
+
+[28]) (plano_de_qualidade.tex
 Underfull \hbox (badness 10000) in paragraph at lines 35--1
 
  []
 
-[26]
-Cap\'{\i }tulo 7.
-[27
 
-]) (plano_de_gestao_de_configuracoes.tex
-Underfull \hbox (badness 10000) in paragraph at lines 18--1
+Underfull \hbox (badness 10000) in paragraph at lines 35--1
 
  []
 
-[28]
-Cap\'{\i }tulo 8.
-[29
+[29]
+Cap\'{\i }tulo 7.
 
-]) (plano_de_documentacao.tex [30]
+Underfull \hbox (badness 10000) in paragraph at lines 5--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--16
+
+ []
+
+[30
+
+]) (plano_de_gestao_de_configuracoes.tex
+Underfull \hbox (badness 10000) in paragraph at lines 20--1
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--1
+
+ []
+
+[31]
+Cap\'{\i }tulo 8.
+[32
+
+]) (plano_de_documentacao.tex [33]
 Cap\'{\i }tulo 9.
 
-Overfull \hbox (3.76962pt too wide) in paragraph at lines 8--8
+Overfull \hbox (3.76962pt too wide) in paragraph at lines 7--7
 []\OT1/cmr/bx/n/14.4 Identificac~ao do res-ponsavel pela sua redac~ao
  []
 
-[31
-
-] [32]) (plano_de_gestao_de_dados.tex [33]
-Cap\'{\i }tulo 10.
-<bd.png, id=157, 284.56313pt x 227.85126pt>
-File: bd.png Graphic file (type png)
-<use bd.png>
-Package pdftex.def Info: bd.png  used on input line 10.
-(pdftex.def)             Requested size: 284.56242pt x 227.8507pt.
 [34
 
+]) (plano_de_gestao_de_dados.tex [35] [36]
+Cap\'{\i }tulo 10.
+<bd.png, id=174, 284.56313pt x 227.85126pt>
+File: bd.png Graphic file (type png)
+<use bd.png>
+Package pdftex.def Info: bd.png  used on input line 12.
+(pdftex.def)             Requested size: 284.56242pt x 227.8507pt.
+[37
+
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 21--40
+Underfull \hbox (badness 10000) in paragraph at lines 23--42
 
  []
 
-[35 <./bd.png>] [36]) (plano_de_testes.tex [37]
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--42
+
+ []
+
+[38 <./bd.png>] [39]) (plano_de_testes.tex [40]
 Cap\'{\i }tulo 11.
-) (plano_de_formaçao.tex [38
+) (plano_de_formaçao.tex [41
 
 ]
 Cap\'{\i }tulo 12.
@@ -589,7 +687,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--11
 
  []
 
-) (plano_de_segurança.tex [39
+) (plano_de_segurança.tex [42
 
 ]
 Cap\'{\i }tulo 13.
@@ -619,7 +717,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
 
  []
 
-[40
+[43
 
 ]
 Overfull \hbox (4.36064pt too wide) in paragraph at lines 19--21
@@ -637,7 +735,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-) (plano_de_manutenção.tex [41]
+) (plano_de_manutenção.tex [44]
 Cap\'{\i }tulo 14.
 
 Overfull \hbox (0.97284pt too wide) in paragraph at lines 4--7
@@ -645,33 +743,40 @@ Overfull \hbox (0.97284pt too wide) in paragraph at lines 4--7
  mui-tos obstaculos
  []
 
-<Manutenção.png, id=185, 472.76625pt x 377.15906pt>
-File: Manutenção.png Graphic file (type png)
-<use Manutenção.png>
-Package pdftex.def Info: Manutenção.png  used on input line 12.
-(pdftex.def)             Requested size: 426.79134pt x 340.48743pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 12--13
- [][] 
- []
+! LaTeX Error: File `Pedidos_Manutençao' not found.
 
-[42
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...egraphics[width=15cm]{Pedidos_Manutençao}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[45
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 28--31
 
  []
 
-[43 <./Manutenção.png>]
-<Manutenção2.png, id=194, 644.4075pt x 472.76625pt>
-File: Manutenção2.png Graphic file (type png)
-<use Manutenção2.png>
-Package pdftex.def Info: Manutenção2.png  used on input line 34.
-(pdftex.def)             Requested size: 426.79134pt x 313.12318pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 34--35
- [][] 
- []
+! LaTeX Error: File `Pedidos_Manutencao2' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 ...egraphics[width=15cm]{Pedidos_Manutencao2}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 ! LaTeX Error: There's no line here to end.
@@ -687,7 +792,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) (referencias.tex [44 <./Manutenção2.png>]
+) (referencias.tex [46]
 Cap\'{\i }tulo 15.
 
 ! LaTeX Error: There's no line here to end.
@@ -725,8 +830,8 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.9 \section
-            {Plano de qualidade}
+l.9 
+    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -742,30 +847,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-) (conclusão.tex
-Overfull \hbox (23.6674pt too wide) in paragraph at lines 10--1
+
+Overfull \hbox (23.6674pt too wide) in paragraph at lines 11--16
 \OT1/cmr/m/n/10 https://pt.linkedin.com/pulse/import^ancia-de-um-plano-qualidad
 e-software-e-testes-
  []
 
 
-Overfull \hbox (13.00076pt too wide) in paragraph at lines 10--1
+Overfull \hbox (13.00076pt too wide) in paragraph at lines 11--16
 \OT1/cmr/m/n/10 https://www.projectbuilder.com.br/blog/importancia-da-gestao-da
 -qualidade-em-
  []
 
-[45
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--16
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 h
+      ttps://docs.microsoft.com/pt-pt/power-platform/admin/web-application-r...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) (conclusão.tex
+Overfull \hbox (37.58417pt too wide) in paragraph at lines 19--1
+\OT1/cmr/m/n/10 https://docs.microsoft.com/pt-pt/power-platform/admin/web-appli
+cation-requirements 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--1
+
+ []
+
+[47
 
 ]
 Cap\'{\i }tulo 16.
-) (plano_projeto.bbl) [46
+) (plano_projeto.bbl) [48
 
 ] (plano_projeto.aux) ) 
 Here is how much of TeX's memory you used:
- 2864 strings out of 479334
- 47533 string characters out of 2857085
- 355980 words of memory out of 3000000
- 20243 multiletter control sequences out of 15000+200000
+ 2937 strings out of 479334
+ 48770 string characters out of 2857085
+ 356040 words of memory out of 3000000
+ 20304 multiletter control sequences out of 15000+200000
  409918 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,7n,78p,1144b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -781,9 +916,9 @@ C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
 12.pfb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmr17.pfb><C:/Users/ricar/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmti10.pfb>
-Output written on plano_projeto.pdf (47 pages, 1628595 bytes).
+Output written on plano_projeto.pdf (49 pages, 1572014 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
+ 253 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 116 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
