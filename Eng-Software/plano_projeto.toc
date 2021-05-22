@@ -75,21 +75,29 @@
 \contentsline {section}{\numberline {10.5}Estado inicial da base de dados}{39}{}%
 \contentsline {section}{\numberline {10.6}Tarefas de carregamento/povoamento inicial de configurações de dados}{40}{}%
 \contentsline {chapter}{\numberline {11}Plano de testes}{41}{}%
-\contentsline {chapter}{\numberline {12}Plano de formação}{42}{}%
-\contentsline {section}{\numberline {12.1}O nosso plano de formação}{42}{}%
-\contentsline {chapter}{\numberline {13}Plano de segurança}{43}{}%
-\contentsline {section}{\numberline {13.1}Segurança do nosso projeto}{43}{}%
-\contentsline {subsection}{\numberline {13.1.1}Quais são os princípios da segurança de informação?}{43}{}%
-\contentsline {subsection}{\numberline {13.1.2}Testes de segurança}{44}{}%
-\contentsline {subsection}{\numberline {13.1.3}Realização de backups à base de dados e à aplicação}{44}{}%
-\contentsline {chapter}{\numberline {14}Plano de manutenção}{45}{}%
-\contentsline {section}{\numberline {14.1}Os objetivos}{45}{}%
-\contentsline {section}{\numberline {14.2}O nosso plano}{45}{}%
-\contentsline {subsection}{\numberline {14.2.1}As categorias de manutenção}{45}{}%
-\contentsline {subsection}{\numberline {14.2.2}Ações e equipas}{46}{}%
-\contentsline {chapter}{\numberline {15}Referências}{47}{}%
-\contentsline {section}{\numberline {15.1}Plano de segurança}{47}{}%
-\contentsline {section}{\numberline {15.2}Plano de manutenção}{47}{}%
-\contentsline {section}{\numberline {15.3}Plano de qualidade}{47}{}%
-\contentsline {section}{\numberline {15.4}Descrição técnica dos sistemas}{47}{}%
-\contentsline {chapter}{\numberline {16}Conclusão}{48}{}%
+\contentsline {section}{\numberline {11.1}Planeamento}{41}{}%
+\contentsline {section}{\numberline {11.2}Documentados}{41}{}%
+\contentsline {section}{\numberline {11.3}Executados}{41}{}%
+\contentsline {section}{\numberline {11.4}Repetidos}{41}{}%
+\contentsline {section}{\numberline {11.5}Conclusão}{42}{}%
+\contentsline {chapter}{\numberline {12}Plano de formação}{43}{}%
+\contentsline {section}{\numberline {12.1}O nosso plano de formação}{43}{}%
+\contentsline {chapter}{\numberline {13}Plano de segurança}{44}{}%
+\contentsline {section}{\numberline {13.1}Segurança do nosso projeto}{44}{}%
+\contentsline {subsection}{\numberline {13.1.1}Quais são os princípios da segurança de informação?}{44}{}%
+\contentsline {subsection}{\numberline {13.1.2}Testes de segurança}{45}{}%
+\contentsline {subsection}{\numberline {13.1.3}Realização de backups à base de dados e à aplicação}{45}{}%
+\contentsline {chapter}{\numberline {14}Plano de manutenção}{46}{}%
+\contentsline {section}{\numberline {14.1}Os objetivos}{46}{}%
+\contentsline {section}{\numberline {14.2}O nosso plano}{46}{}%
+\contentsline {subsection}{\numberline {14.2.1}As categorias de manutenção}{47}{}%
+\contentsline {subsection}{\numberline {14.2.2}Ações e equipas}{48}{}%
+\contentsline {chapter}{\numberline {15}Referências}{50}{}%
+\contentsline {section}{\numberline {15.1}Plano de segurança}{50}{}%
+\contentsline {section}{\numberline {15.2}Plano de manutenção}{50}{}%
+\contentsline {section}{\numberline {15.3}Plano de qualidade}{50}{}%
+\contentsline {section}{\numberline {15.4}Descrição técnica dos sistemas}{51}{}%
+\contentsline {chapter}{\numberline {16}Conclusão}{52}{}%
+\contentsline {section}{\numberline {16.1}Reflexões}{52}{}%
+\contentsline {section}{\numberline {16.2}Áreas de Melhoramento}{52}{}%
+\contentsline {section}{\numberline {16.3}Espetativas de Trabalho Futuro}{52}{}%
