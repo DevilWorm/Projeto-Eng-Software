@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ page import="java.sql.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,6 +37,56 @@
 
 </style>
 <body>
-
+<div align="center">
+	<form method="get">
+		<p> Indique o nome do produto a eliminar:</p>
+		<input type="text" name="produto">
+		<input type="submit" name="Eliminar">
+	</form>
+</div>
+	<%
+		String[] authors=request.getParameterValues("produto");
+		Class.forName("com.mysql.jdbc.Driver");
+		String author=request.getParameter("produto");
+		if(author!= null){
+			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
+			Statement stmt=conn.createStatement();
+			
+			String str="SELECT * FROM stock WHERE produto IN("; 
+			str+="'" +produto + "'";
+			
+			str+=") AND qty > 0 ORDER BY produto ASC";
+			
+			System.out.println("Query statement is " + str);
+			ResultSet rset= stmt.executeQuery(str);
+		
+	%>
+	
+	<hr>
+	<form method="get" action="Orderbooks.jsp">
+	<table border=1 cellpadding=5>
+		<tr>
+			<th>Order</th>
+			<th>Author</th>
+			<th>Title</th>
+			<th>Price</th>
+			<th>Stock</th>
+		</tr>
+	<%
+	while(rset.next()){
+		int id=rset.getInt("id");
+	
+	%>
+		<tr>
+			<td><input type="checkbox" name="id" value="<%= id %>"></td>
+			<td><%=rset.getString("author") %></td>
+			<td><%=rset.getString("title") %></td>
+			<td><%=rset.getString("price") %></td>
+			<td><%=rset.getString("qty") %></td>
+		</tr>
+	<%
+	}
+	%>	
+	
 </body>
 </html>
