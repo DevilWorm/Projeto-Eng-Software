@@ -113,11 +113,22 @@ body {
 <meta charset="ISO-8859-1">
 <title>Login Cliente</title>
 </head>
+<script>
+function formvalidation(){
+	var user = document.form.user.value;
+	var password = document.form.password.value;
+	
+	if ( user == null || user == ""){
+		alert("Insert username");
+		return false;
+	}
+}
+</script>
 <body>
 	<div class="topnav" id="myTopnav">
 	<a href="http://localhost:8080/TestProject/login.jsp" class="active" ><img src="https://i.imgur.com/TYyFXOr.png" alt="some text" width=20 height=20></a>
     <a href="http://localhost:8080/TestProject/stock.jsp"><img src="https://i.imgur.com/06MKgJl.png" alt="some text" width=20 height=20></a>
-  	<a href="http://localhost:8080/TestProject/chome_page.jsp" ">Home</a>
+  	<a href="http://localhost:8080/TestProject/home_page.jsp" ">Home</a>
   	<a href="http://localhost:8080/TestProject/contactos.jsp">Contactos</a>
   	<a href="http://localhost:8080/TestProject/sobre_nos.jsp">Sobre nós</a>
   	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -135,12 +146,12 @@ body {
 	<div align="center" >
 	<h2>Login Cliente</h2>
 	<br>
-		<form method="get">
+		<form name = "form" action = "LoginServlet" method="post" onsubmit = "return formvalidation()">
 		<table style="color:#943939">
 		<thead>
 		<tr>
-			<th>E-mail</th>
-			<th><input name="user" value=""></th>
+			<th>User</th>
+			<th><input name="user"></th>
 		</tr>
 		<tr>
 			<th>Password</th>
@@ -149,48 +160,14 @@ body {
 		</thead>
 		</table>
 		<br>
-			<button class = "poggie" name = "login" value = null>Login!</button>
+			<input class = "Poggie" type = "submit" value = "login"/>
 		</form>
 	
 	<br>
 	<a style="color:#943939" href = "http://localhost:8080/TestProject/login_func.jsp"> Login Funcionário</a>
 	
 
-	<%
-			if(request.getParameter("login") != null){
-				String user = request.getParameter("user");
-				String pwd = request.getParameter("password");
-				
-				try{
-					Class.forName("com.mysql.cj.jdbc.Driver"); 
-					Connection conn = DriverManager.getConnection("jdbc:mysql://77.54.229.5:3306/epadaria","admin", "vasc1234");
-					Statement stat = conn.createStatement();
-					ResultSet rset = stat.executeQuery("select * from clientes");
-					boolean userCheck = false;
-					while(rset.next()){
-						//System.out.println(rset.getString(2) + "=" + user + "|" + rset.getString(3) + "=" + pwd);
-						if(rset.getString("nome").equals(user) && rset.getString("password").equals(pwd)){
-							//logged in!
-							System.out.println("Found a user!");
-							request.getSession().setAttribute("loggedInUser", user);
-							//response.sendRedirect("http://localhost:8080/TestProject/home_page.jsp");
-							userCheck = true;
-						}
-					}
-					
-					if(userCheck == false){
-		%>
-					<p> Try signing a new account! </p>
-					<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp"> Sign Up </a>
-		<%}
-					
-					
-					System.out.println("Connected!");	
-				}catch(SQLException e) {
-					System.out.println("Bad Connection -" + e);
-				}
-			}
-		%>
+	
 		
 		</div>
 </body>

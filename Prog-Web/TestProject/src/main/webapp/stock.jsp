@@ -135,7 +135,7 @@ body {
 
 	
 	<div  align="center">
-	<% if(session == null || session.getAttribute("loggedInUser") == null){
+	<% if(session == null || session.getAttribute("User") == null){
 		%>
 		<h3>Not logged in</h3
 	<% }else{ %>

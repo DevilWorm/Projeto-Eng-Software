@@ -130,7 +130,7 @@ body {
 <center>
 <img src="https://i.imgur.com/sfDeVYR.png" alt="some text" width=192 height=96>
 </center>
-
+	<%= session.getAttribute("User") %>
 	<div align="center">
 		<br>
 		<h1> Página inicial</h1>
