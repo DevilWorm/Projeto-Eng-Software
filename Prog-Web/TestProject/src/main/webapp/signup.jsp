@@ -118,8 +118,8 @@ body {
 <body>
 
 <div class="topnav" id="myTopnav">
-	<a href="http://localhost:8080/TestProject/login.jsp" class="active"><img src="https://i.imgur.com/sDkp8UQ.png" alt="some text" width=20 height=20></a>
-    <a href="http://localhost:8080/TestProject/stock.jsp"><img src="https://i.imgur.com/xvXkEV7.png" alt="some text" width=20 height=20></a>
+	<a href="http://localhost:8080/TestProject/login.jsp" class="active"><img src="https://i.imgur.com/TYyFXOr.png" alt="some text" width=20 height=20></a>
+    <a href="http://localhost:8080/TestProject/stock.jsp"><img src="https://i.imgur.com/06MKgJl.png" alt="some text" width=20 height=20></a>
   	<a href="http://localhost:8080/TestProject/home_page.jsp" >Home</a>
   	<a href="http://localhost:8080/TestProject/contactos.jsp">Contactos</a>
   	<a href="http://localhost:8080/TestProject/sobre_nos.jsp">Sobre nós</a>
