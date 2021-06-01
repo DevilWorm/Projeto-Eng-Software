@@ -71,6 +71,7 @@
 			<th>Title</th>
 			<th>Price</th>
 			<th>Stock</th>
+			<th <a href="?delete<%=rs.getInt(1) %>">Eliminar</a></th>
 		</tr>
 	<%
 	while(rset.next()){
@@ -87,6 +88,24 @@
 	<%
 	}
 	%>	
+	
+	<%
+	   Class.forName("com.mysql.jdbc.Driver");
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
+		if request.getParameter("delete")!=null){
+			int id=Integer.parseInt(request.getParameter("delete"));
+			
+			PreparedStatement pstmt=null;
+			
+			pstmt.con=preparedStatement("delete from stock where id=?");
+			pstmt.setInt(1,id);
+			
+
+			con.close();
+		}
+	%>
+	
+	
 	
 </body>
 </html>
