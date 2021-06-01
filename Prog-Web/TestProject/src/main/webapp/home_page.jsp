@@ -9,6 +9,11 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <style>
 	.poggie {
 	 
@@ -138,6 +143,16 @@ body {
 		
 	
 		<img src="https://www.daninoce.com.br/wp-content/uploads/2018/11/9-receitas-deliciosas-de-naked-cake-dani-noce-destaque-960x625.jpg" alt="some text" width=760 height=425>
-	</div>	
+	</div>
+	
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-brown w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <h3>ssss</h3>
+  
+  <p class="w3-medium">
+  
+  </p>
+</footer>	
 </body>
 </html>
