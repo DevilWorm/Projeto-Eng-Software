@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Adicionar produto</title>
 </head>
 <style>
 
@@ -47,7 +47,7 @@
 			        <thead>
 			        	<tr>
 			        		<td style = "text-align:right">Nome:</td>
-			        		<th><input type = "text" name = "nomeproduto" id = "nomeproduto"></th>			        	
+			        		<th><input type = "text" name = "nome" id = "nome"></th>			        	
 			        	</tr>
 				        <tr>
 				            <td style="text-align:right">Preço:</td>
@@ -57,6 +57,10 @@
 				            <td style="text-align:right">Descrição:</td>
 				            <th><input type = "text" name="descricao" id = "descricao"></th>
 				        </tr>
+				        <tr>
+				            <td style="text-align:right">Padaria:</td>
+				            <th><input type = "text" name="padaria" id = "padaria"></th>
+				        </tr>
 				       
 				      
 			        </thead>
@@ -64,37 +68,45 @@
 		        <br>
 		        <button class = "w3-button poggie" name = "add_produto" value = null>Adicionar</button>
      	    </form>
-<%
-			if(request.getParameter("add_produto") != null){
-				try(
-					Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
-					PreparedStatement preparedStatement = conn.prepareStatement("insert into stock value(?,?,?)");			
-				){
-					String nome = request.getParameter("nome");
-					String preco = request.getParameter("preco");
-					String descricao = request.getParameter("descricao");
+<% 
+
+
+     	  if(request.getParameter("add_produto")!= null){
+     		 	String nome = request.getParameter("nome");
+				String preco = request.getParameter("preco");
+				String descricao = request.getParameter("descricao");
+				String padaria = request.getParameter("padaria");
+	
+	
+	
+	 try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");){
+	
+		PreparedStatement preparedStatement = conn.prepareStatement("insert into stock value(?,?,?,?)");
+		
+			try{
+				
 					
-					if(nome.length() >= 3){
-						try{
-							preparedStatement.setString(1, nome);
-							preparedStatement.setString(2,preco);
-							preparedStatement.setString(3,descricao);
-						
-							preparedStatement.executeUpdate();
-							
-							System.out.println("Done?");
-							response.sendRedirect("http://localhost:8080/TestProject/home_page.jsp");
-						}catch(Exception e){
-							System.out.println("Out of bounds!");
-							response.sendRedirect("http://localhost:8080/TestProject/signup.jsp");
-						}
-					}
-				}catch(SQLException e){System.out.println(e);}
-			}else{
-				System.out.println("Now we here");
-			}
+					
+				preparedStatement.setString(1,nome);
+				preparedStatement.setString(2,preco);
+				preparedStatement.setString(3,descricao);
+				preparedStatement.setString(4,padaria);
+				preparedStatement.executeUpdate();
+					
 			
-		%>
+			}catch(ArrayIndexOutOfBoundsException e){
+				System.out.println(e);
+			}
+		
+	}
+}
+
+%>
+
+
+
+  	    
+
 	</div>
 	
 
