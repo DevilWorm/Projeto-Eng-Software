@@ -7,6 +7,11 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <style>
 	.poggie {
 	 
@@ -130,7 +135,7 @@ function formvalidation(){
     <a href="http://localhost:8080/TestProject/carrinho.jsp"><img src="https://i.imgur.com/06MKgJl.png" alt="some text" width=20 height=20></a>
   	<a href="http://localhost:8080/TestProject/home_page.jsp" ">Home</a>
   	<a href="http://localhost:8080/TestProject/stock.jsp" >Produtos</a>
-  	<a href="http://localhost:8080/TestProject/contactos.jsp">Contactos</a>
+
   	<a href="http://localhost:8080/TestProject/sobre_nos.jsp">Sobre nós</a>
   	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -166,10 +171,23 @@ function formvalidation(){
 	
 	<br>
 	<a style="color:#943939" href = "http://localhost:8080/TestProject/login_func.jsp"> Login Funcionário</a>
-	
 
-	
 		
 		</div>
+		
+		<br><br><br><br>
+		<!-- Footer -->
+<footer class="w3-container w3-padding-50 w3-center w3-brown w3-xlarge">
+<h5><u>Siga-nos em:</u></h5>
+  <a href="https://www.facebook.com/EPadaria-101399275434399"><i class="fa fa-facebook-official"></i></a>
+  <h5> <u>Contactos:</u></h5>
+  <h6> Telefone geral: 224 233 105</h6>
+  <h6>E-mail: ePadaria@gmail.com</h6>
+  <img src="https://i.imgur.com/sfDeVYR.png" width=192 height=96>
+  
+  <p class="w3-medium">
+  
+  </p>
+</footer>	
 </body>
 </html>
