@@ -12,7 +12,7 @@ public class UserDAO {
 		try {
 			con = DBConnection.createConnection();
 			Statement stat = con.createStatement();
-			ResultSet rset = stat.executeQuery("Select * from users Where username='" + name + "' and password='" + password + "'");
+			ResultSet rset = stat.executeQuery("Select * from clientes Where nome='" + name + "' and password='" + password + "'");
 			if(rset.next()) {
 				return name;
 			}

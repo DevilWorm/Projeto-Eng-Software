@@ -173,7 +173,7 @@ body {
 	<%
 			if(request.getParameter("signin") != null){
 				try(
-					Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
+					Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
 					PreparedStatement preparedStatement = conn.prepareStatement("insert into clientes value(?,?,?,?,?,?,?,?)");			
 				){
 					String nome = request.getParameter("nome");

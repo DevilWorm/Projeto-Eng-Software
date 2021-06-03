@@ -119,11 +119,18 @@ body {
 
 <meta charset="ISO-8859-1">
 <title>Home page</title>
+<%@ page session="true" %>
 </head>
+
 <body>
 	<div class="topnav" id="myTopnav">
-	<a href="http://localhost:8080/TestProject/login.jsp" ><img src="https://i.imgur.com/TYyFXOr.png" alt="some text" width=20 height=20></a>
-    <a href="http://localhost:8080/TestProject/carrinho.jsp"><img src="https://i.imgur.com/06MKgJl.png" alt="some text" width=20 height=20></a>
+	<%  if(session.getAttribute("User") == null){ %>	
+			<a href="http://localhost:8080/TestProject/login.jsp" ><img src="https://i.imgur.com/TYyFXOr.png" alt="some text" width=20 height=20></a>
+	<%	}else{ %>
+			<a href="http://localhost:8080/TestProject/LogoutServlet"> <%= session.getAttribute("User") %> </a> 
+	<% 	} %>
+	
+	<a href="http://localhost:8080/TestProject/carrinho.jsp"><img src="https://i.imgur.com/06MKgJl.png" alt="some text" width=20 height=20></a>
   	<a href="http://localhost:8080/TestProject/home_page.jsp" class="active">Home</a>
   	<a href="http://localhost:8080/TestProject/stock.jsp" >Produtos</a>
   	<a href="http://localhost:8080/TestProject/sobre_nos.jsp">Sobre nós</a>
@@ -132,7 +139,7 @@ body {
   	</a>
 </div>
 <br><br><br>
-	<%= session.getAttribute("User") %>
+	
 	<div align="center">
 		<br>
 		<h1><u>Bem vindo ao ePadaria</u></h1>

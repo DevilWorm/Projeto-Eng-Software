@@ -123,7 +123,11 @@ body {
 </style>
 <body>
 	<div class="topnav" id="myTopnav">
-	<a href="http://localhost:8080/TestProject/login.jsp" ><img src="https://i.imgur.com/TYyFXOr.png" alt="some text" width=20 height=20></a>
+	<%  if(session.getAttribute("User") == null){ %>	
+			<a href="http://localhost:8080/TestProject/login.jsp" ><img src="https://i.imgur.com/TYyFXOr.png" alt="some text" width=20 height=20></a>
+	<%	}else{ %>
+			<a href="http://localhost:8080/TestProject/LogoutServlet"> <%= session.getAttribute("User") %> </a> 
+	<% 	} %>
     <a href="http://localhost:8080/TestProject/carrinho.jsp" class="active" ><img src="https://i.imgur.com/06MKgJl.png" alt="some text" width=20 height=20></a>
   	<a href="http://localhost:8080/TestProject/home_page.jsp" >Home</a>
   	<a href="http://localhost:8080/TestProject/stock.jsp" >Produtos</a>
@@ -137,11 +141,10 @@ body {
 
 	
 	<div  align="center">
-	<% if(session == null || session.getAttribute("loggedInUser") == null){
+	<% if(session.getAttribute("User") == null){
 	%>
 		<h3>Not logged in</h3>
-	<% }else{ %>
-	<%
+	<% }else{
 			try( Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
 				Statement stat = conn.createStatement();){
 				ResultSet rset = stat.executeQuery("SELECT * FROM pedidos"); %>
@@ -151,25 +154,37 @@ body {
 					<th>Hora de Levantamento</th>
 					<th>Data de Levantamento</th>
 					<th>Tipo de Pagamento</th>
-				
+					<th>Morada de Entrega</th>
 					<th>Quantidade</th>
+					<th>User</th>
 				</tr>	
 			<%
 				while (rset.next()){
 					int pedido = rset.getInt("nr_pedido");
-					String hora = rset.getString("hora_levantamento");
-					String data = rset.getString("data_levantamento");
+					String hora = rset.getString("hora_entrega");
+					String data = rset.getString("data_entrega");
 					String tipo = rset.getString("tipo_pagamento");
+					String morada = rset.getString("morada_entrega");
 					int qty = rset.getInt("qty");
+					String user = rset.getString("User");
+					String currentuser = (String) session.getAttribute("User");
+					if(user.contains(currentuser)){
 			%>
 				<tr>
 					<td><%= pedido %>
 					<td><%= hora %>
 					<td><%= data %>
 					<td><%= tipo %>
+					<td><%= morada%>
 					<td><%= qty %>
+					<td><%= user %>
 				</tr>
-		<% } %>
+		    <% 		}else{ %>
+		    		<a> <%= user + " _ " + currentuser %></a>
+		    <% 
+		    		}
+				} %>
+				
 		</table>
 		<br>
 		<%      
@@ -183,7 +198,7 @@ body {
 	</div>
 	<br><br><br><br>
 	<!-- Footer -->
-<footer class="w3-container w3-padding-50 w3-center w3-brown w3-xlarge">
+	<footer class="w3-container w3-padding-50 w3-center w3-brown w3-xlarge">
 <h5><u>Siga-nos em:</u></h5>
   <a href="https://www.facebook.com/EPadaria-101399275434399"><i class="fa fa-facebook-official"></i></a>
   <h5> <u>Contactos:</u></h5>
@@ -196,4 +211,6 @@ body {
   </p>
 </footer>	
 </body>
+
+
 </html>

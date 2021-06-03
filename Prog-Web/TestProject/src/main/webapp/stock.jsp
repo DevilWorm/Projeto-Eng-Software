@@ -202,13 +202,14 @@ body {
 				String[] qty = request.getParameterValues("qty");
 				if(ids != null){
 					for(int i = 0; i < ids.length; i++){
-							PreparedStatement prep = conn.prepareStatement("insert into pedidos value(?,?,?,?,?,?)");
+							PreparedStatement prep = conn.prepareStatement("insert into pedidos value(?,?,?,?,?,?,?)");
 							prep.setObject(2, LocalDate.now());
 							prep.setObject(1, LocalTime.now());
 							prep.setInt(3, Integer.parseInt(ids[i]));
 							prep.setString(4,"Empty For Now");
 							prep.setString(5, "Morada de Entrega");
 							prep.setInt(6, Integer.parseInt(qty[i]));
+							prep.setString(7, (String) session.getAttribute("User"));
 							prep.executeUpdate();
 					}
 				}
