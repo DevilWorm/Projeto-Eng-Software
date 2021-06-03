@@ -139,7 +139,7 @@ body {
 	<div  align="center">
 	<% if(session == null || session.getAttribute("loggedInUser") == null){
 	%>
-		<h3>Not logged in</h3
+		<h3>Not logged in</h3>
 	<% }else{ %>
 	<%
 			try( Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
@@ -148,19 +148,18 @@ body {
 			<table border="1">
 				<tr>
 					<th>Nº do Pedido</th>
-					<th>Hora de Entrega</th>
-					<th>Data de Entrega</th>
+					<th>Hora de Levantamento</th>
+					<th>Data de Levantamento</th>
 					<th>Tipo de Pagamento</th>
-					<th>Morada</th>
+				
 					<th>Quantidade</th>
 				</tr>	
 			<%
 				while (rset.next()){
 					int pedido = rset.getInt("nr_pedido");
-					String hora = rset.getString("hora_entrega");
-					String data = rset.getString("data_entrega");
+					String hora = rset.getString("hora_levantamento");
+					String data = rset.getString("data_levantamento");
 					String tipo = rset.getString("tipo_pagamento");
-					String morada = rset.getString("morada_entrega");
 					int qty = rset.getInt("qty");
 			%>
 				<tr>
@@ -168,7 +167,6 @@ body {
 					<td><%= hora %>
 					<td><%= data %>
 					<td><%= tipo %>
-					<td><%= morada %>
 					<td><%= qty %>
 				</tr>
 		<% } %>
