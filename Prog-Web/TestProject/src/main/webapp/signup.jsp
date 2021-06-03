@@ -26,23 +26,6 @@
 	  margin: auto;
 	}
 	body {
- 	 background-color:#f5ecd0;}
-
-</style>
-<style>
-	.poggie {
-	 
-	  border: 10px;
-	  color: #943939;
-	  padding: 10px 27px;
-	  text-align: center;
-	  text-decoration: none;
-	  display: inline-block;
-	  font-size: 16px;
-	  
-	  margin: auto;
-	}
-	body {
  	 background-color:#f5ecd0;
  	  h1   {color: #943939;}
  	}

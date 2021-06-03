@@ -121,32 +121,34 @@ body {
     <a href="http://localhost:8080/TestProject/stock.jsp"><img src="https://i.imgur.com/06MKgJl.png" alt="some text" width=20 height=20></a>
   	<a href="http://localhost:8080/TestProject/home_page.jsp" >Home</a>
   	<a href="http://localhost:8080/TestProject/stock.jsp" >Produtos</a>
-
   	<a href="http://localhost:8080/TestProject/sobre_nos.jsp" class="active">Sobre nós</a>
   	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   	</a>
-</div>
+	</div>
 <br><br><br>
 <center>
 <img src="https://i.imgur.com/sfDeVYR.png" alt="some text" width=192 height=96>
 </center>
 
 	<div align="center">
-		<h2> Qual é o nosso objetivo?</h2>
+		<h2><u>Qual é o nosso objetivo?</u></h2>
 		<table  width="70%" cellpadding="8" >
 		 
 		 	<thead>
 		  	<tr>
 		
-				<th><p> O nosso sistema tem como objetivo ajudar as padarias de pequena dimensão a melhor organizarem o seu negócio e ajudar os clientes dos mesmos a mais facilmente fazerem os seus pedidos.</p></th>
+				<th><h5> O nosso sistema tem como objetivo ajudar as padarias de pequena dimensão a melhor organizarem o seu negócio e ajudar os clientes dos mesmos a mais facilmente fazerem os seus pedidos.</h5></th>
+			</tr>
+			<tr>
+				<th><img src="https://i.imgur.com/14LLvWa.jpeg"></th>
 			</tr>
 			
-				<th><h2> História</h2></th>
+				<th><h2><u> História</u></h2></th>
 			</tr>
 		
 			<tr>
-				<th><p> O ePadaria veio do inicio de um projeto pela cadeira de Desenho e Analise de Sistemas e que agora deu continuidade com as cadeiras de Base de dados e Programação para web.</p></th>
+				<th><h5> O ePadaria veio do inicio de um projeto pela cadeira de Desenho e Analise de Sistemas e que agora deu continuidade com as cadeiras de Base de dados e Programação para web.</h5></th>
 			</tr>
 			 </thead>
 		  </table>
@@ -154,17 +156,15 @@ body {
 		</div>
 		<br><br><br><br>
 	<!-- Footer -->
-<footer class="w3-container w3-padding-50 w3-center w3-brown w3-xlarge">
-<h5><u>Siga-nos em:</u></h5>
-  <a href="https://www.facebook.com/EPadaria-101399275434399"><i class="fa fa-facebook-official"></i></a>
-  <h5> <u>Contactos:</u></h5>
-  <h6> Telefone geral: 224 233 105</h6>
-  <h6>E-mail: ePadaria@gmail.com</h6>
-  <img src="https://i.imgur.com/sfDeVYR.png" width=192 height=96>
-  
-  <p class="w3-medium">
-  
-  </p>
-</footer>	
+	<footer class="w3-container w3-padding-50 w3-center w3-brown w3-xlarge">
+		<h5><u>Siga-nos em:</u></h5>
+  		<a href="https://www.facebook.com/EPadaria-101399275434399"><i class="fa fa-facebook-official"></i></a>
+  		<h5> <u>Contactos:</u></h5>
+  		<h6> Telefone geral: 224 233 105</h6>
+  		<h6>E-mail: ePadaria@gmail.com</h6>
+  		<img src="https://i.imgur.com/sfDeVYR.png" width=192 height=96>
+  		<p class="w3-medium">
+  		</p>
+	</footer>	
 </body>
 </html>
