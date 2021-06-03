@@ -168,12 +168,17 @@ function formvalidation(){
 		</form>
 	
 	<br>
-	<a style="color:#943939" href = "http://localhost:8080/TestProject/login_func.jsp"> Login Funcionário</a>
-
-		
+	<a style="color:#943939" href = "http://localhost:8080/TestProject/signup.jsp"> Faça aqui o seu registo</a>
+	<br><br>
+	<a style="color:#b08989" href = "http://localhost:8080/TestProject/login_func.jsp"> Login Funcionário</a>
+	
 		</div>
 		
-		<br><br><br><br>
+	
+
+		
+		
+		<br><br>
 		<!-- Footer -->
 <footer class="w3-container w3-padding-50 w3-center w3-brown w3-xlarge">
 <h5><u>Siga-nos em:</u></h5>

@@ -209,6 +209,8 @@ body {
 			}
 			
 		%>
+		<br><br>
+		<a style="color:#943939" href = "http://localhost:8080/TestProject/login.jsp"> Já se registou?Acede aqui</a>
 </div>
 <br><br><br><br>
 <!-- Footer -->

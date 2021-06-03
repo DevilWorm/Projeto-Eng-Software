@@ -149,7 +149,7 @@ body {
 		<h5> Temos de todo o tipo de produtos escolhidos especialmente a pensar em si.</h5>
 		<img src="https://i.imgur.com/oSOufkb.png" alt="some text" width=60 height=60>
 		<br><br>
-		<img src="https://www.daninoce.com.br/wp-content/uploads/2018/11/9-receitas-deliciosas-de-naked-cake-dani-noce-destaque-960x625.jpg" alt="some text" width=360 height=25>
+		<img src="https://www.daninoce.com.br/wp-content/uploads/2018/11/9-receitas-deliciosas-de-naked-cake-dani-noce-destaque-960x625.jpg" alt="some text" width=360 height=225>
 	</div>
 	
 <!-- Footer -->

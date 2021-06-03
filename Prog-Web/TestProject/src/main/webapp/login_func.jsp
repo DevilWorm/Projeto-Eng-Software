@@ -140,8 +140,8 @@ body {
 		<table style="color:#943939">
 		<thead>
 		<tr>
-			<th>E-mail</th>
-			<th><input name="user" value=""></th>
+			<th>Id funcionário</th>
+			<th><input name="id_func" value=""></th>
 		</tr>
 		<tr>
 			<th>Password</th>
@@ -152,21 +152,21 @@ body {
 		<br>
 			<button class = "poggie" name = "login" value = null>Login!</button>
 		</form>
-	</div>
+	
 	<%
 			if(request.getParameter("login") != null){
-				String user = request.getParameter("user");
+				String user = request.getParameter("id_func");
 				String pwd = request.getParameter("password");
 				
 				try{
 					Class.forName("com.mysql.cj.jdbc.Driver"); 
-					Connection conn = DriverManager.getConnection("jdbc:mysql://77.54.229.5:3306/epadaria","admin", "vasc1234");
+					Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
 					Statement stat = conn.createStatement();
-					ResultSet rset = stat.executeQuery("select * from clientes");
+					ResultSet rset = stat.executeQuery("select * from funcionario");
 					boolean userCheck = false;
 					while(rset.next()){
 						//System.out.println(rset.getString(2) + "=" + user + "|" + rset.getString(3) + "=" + pwd);
-						if(rset.getString("nome").equals(user) && rset.getString("password").equals(pwd)){
+						if(rset.getString("id_func").equals(user) && rset.getString("password").equals(pwd)){
 							//logged in!
 							System.out.println("Found a user!");
 							request.getSession().setAttribute("loggedInUser", user);
@@ -177,8 +177,8 @@ body {
 					
 					if(userCheck == false){
 		%>
-					<p> Try signing a new account! </p>
-					<a class = "poggie" href = "http://localhost:8080/TestProject/signup.jsp"> Sign Up </a>
+					<p> Tenta de novo! Se persistir contacte 224 235 458 </p>
+					
 		<%}
 					
 					
@@ -188,6 +188,7 @@ body {
 				}
 			}
 		%>
+		</div>
 <br>
 <br><br><br><br>
 	
