@@ -51,18 +51,18 @@
 		<%
 		 Class.forName("com.mysql.cj.jdbc.Driver");  
 		try{
-		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
 		PreparedStatement pstmt=null;
 		pstmt=con.prepareStatement("Select * from stock");
 		ResultSet rs=pstmt.executeQuery();
 		while(rs.next()){
 		%>
 		<tr>
-			<td><%rs.getInt(1)%></td>
-			<td><%rs.getString(2)%></td>
-			<td><%rs.getInt(3)%></td>
-			<td><%rs.getString(4)%></td>
-			<td><%rs.getString(5)%></td>
+			<td><%= rs.getInt(1)%></td>
+			<td><%= rs.getString(2)%></td>
+			<td><%= rs.getInt(3)%></td>
+			<td><%= rs.getString(4)%></td>
+			<td><%= rs.getString(5)%></td>
 			
 			<td> <a href="?delete=<%=rs.getInt(1) %>"> Eliminar</a></td>
 			</tr>
@@ -81,15 +81,16 @@
 	<%
 	try{
 		 Class.forName("com.mysql.cj.jdbc.Driver");
-		 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
-		 if(request.getParameter("delete"));{
-		 
-		 PreparedStatement pstmt=null;
-		 pstmt=con.prepareStatement("delete from stock where id=?");
-		 pstmt.setInt(1,id);
-		 
-		 con.close();
-	}
+		 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
+		 if(request.getParameter("delete") != null){
+		 	int id = Integer.parseInt(request.getParameter("delete"));
+		 	PreparedStatement pstmt=null;
+		 	pstmt=con.prepareStatement("delete from stock where id=?");
+			pstmt.setInt(1,id);
+			pstmt.executeUpdate();
+			
+			con.close();
+		}
 	} catch(Exception e){
 		System.out.println(e);
 	}
