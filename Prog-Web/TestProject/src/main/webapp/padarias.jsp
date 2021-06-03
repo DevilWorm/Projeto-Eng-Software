@@ -113,7 +113,7 @@ body {
 </style>
 
 <meta charset="ISO-8859-1">
-<title>Sobre nós</title>
+<title>Padarias</title>
 </head>
 <body>
 	<div class="topnav" id="myTopnav">
@@ -131,29 +131,128 @@ body {
 
 
 	<div align="center">
-		<h2><u>Qual é o nosso objetivo?</u></h2>
-		<table  width="70%" cellpadding="8" >
-		 
+		<h2><u>Quais são as padarias aderentes ao sistema?</u></h2>
+		<table  width="70%" cellpadding="8" > 
 		 	<thead>
 		  	<tr>
 		
-				<th><h5> O nosso sistema tem como objetivo ajudar as padarias de pequena dimensão a melhor organizarem o seu negócio e ajudar os clientes dos mesmos a mais facilmente fazerem os seus pedidos.</h5></th>
-			</tr>
-			<tr>
-				<th><img src="https://i.imgur.com/14LLvWa.jpeg"></th>
+				<h3> O nosso sistema pretende chegar á padaria perto de si, vejam as que já aderiram no mapa.</h3>
 			</tr>
 			
-				<th><h2><u> História</u></h2></th>
-			</tr>
+			
+
+
+  
+  <body>
+  <style>
+
+		.map {
+				height: 500px;
+				width:700px;
+		}
+	
+	</style>
+			<center>
+			
+			<div class="map" id="map"></div>
+			</center>
+			
+			<script>
+			var map;
+			var InfoObj = [];
+			var centerCords = {
+					lat: 41.125065,
+					lng: -8.612700
+				
+			};
+			
+			
+			var icons = {
+				    padaria: {
+				      icon: 'https://i.ibb.co/RDbf6HV/176697575-101401892100804-4208158362144968545-n.png'
+				    },
+			};
+			
+			var markersOnMap = [
+				{
+					placeName: 'Estalactite Azulada',
+					LatLng: [{
+						lat: 41.125085,
+						lng: -8.612540
+					}],
+					type: 'padaria'
+				},
+					
+				{		
+						placeName: 'Thatty Caffé',
+						LatLng: [{
+							lat: 41.125087,
+							lng: -8.612893
+						}],
+						type: 'padaria'
+						},
+							
+						{
+							placeName: 'Dr. Café',
+							LatLng: [{
+								lat: 41.125026,
+								lng: -8.612257
+							}],
+							type: 'padaria'
+							},
+										
+					];
+					
+			window.onload = function() {
+				initMap();
+			};
+			
+			function addMarkerInfo(){
+				for( var i = 0; i < markersOnMap.length; i++ ){
+					var contentString = '<h3>' +  markersOnMap[i].placeName + '</h3>';
+					
+					const marker = new google.maps.Marker({
+						position: markersOnMap[i].LatLng[0],
+						icon: icons[markersOnMap[i].type].icon,
+						map: map
+						});
+					
+					const infowindow = new google.maps.InfoWindow({
+						    content: contentString,
+						  });
+					  
+					  marker.addListener('click', function() {
+						  	closeOtherInfo();
+						    infowindow.open(map, marker);
+						    InfoObj[0] = infowindow;
+						  });
+					  
+				}
+			}
+			
+			function closeOtherInfo(){
+				if( InfoObj.length > 0 ) {
+				InfoObj[0].set("marker", null);
+				InfoObj[0].close();
+				InfoObj[0].lenght = 0;
+				
+			}
+		}
+			function initMap(){
+				map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 18,
+					center: centerCords
+				});
+				addMarkerInfo();
+			}
+			</script>
+			<script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjmUpmXszdRnSHKO2LllM2UzEOIUH5F_0&callback=initMap&libraries=&v=weekly"
+      
+    ></script>
 		
-			<tr>
-				<th><h5> O ePadaria veio do inicio de um projeto pela cadeira de Desenho e Analise de Sistemas e que agora deu continuidade com as cadeiras de Base de dados e Programação para web.</h5></th>
-			</tr>
-			 </thead>
-		  </table>
 		
-		</div>
-		<br><br><br><br>
+
 	<!-- Footer -->
 	<footer class="w3-container w3-padding-50 w3-center w3-brown w3-xlarge">
 		<h5><u>Siga-nos em:</u></h5>
