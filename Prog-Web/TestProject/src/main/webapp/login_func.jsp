@@ -119,9 +119,9 @@ body {
 </style>
 <body>
 <div class="topnav" id="myTopnav">
-	<a href="http://localhost:8080/TestProject/login.jsp" ><img src="https://i.imgur.com/TYyFXOr.png" alt="some text" width=20 height=20></a>
+	<a href="http://localhost:8080/TestProject/login.jsp" class="active" ><img src="https://i.imgur.com/TYyFXOr.png" alt="some text" width=20 height=20></a>
     <a href="http://localhost:8080/TestProject/carrinho.jsp"><img src="https://i.imgur.com/06MKgJl.png" alt="some text" width=20 height=20></a>
-  	<a href="http://localhost:8080/TestProject/home_page.jsp" class="active">Home</a>
+  	<a href="http://localhost:8080/TestProject/home_page.jsp" >Home</a>
   	<a href="http://localhost:8080/TestProject/stock.jsp" >Produtos</a>
 
   	<a href="http://localhost:8080/TestProject/sobre_nos.jsp">Sobre nós</a>
@@ -130,9 +130,7 @@ body {
   	</a>
 </div>
 <br><br><br>
-<center>
-<img src="https://i.imgur.com/sfDeVYR.png" alt="some text" width=192 height=96>
-</center>
+
 
 	<div align="center" >
 	<h2>Login Funcionário</h2>
@@ -192,7 +190,8 @@ body {
 		%>
 <br>
 <br><br><br><br>
-	<!-- Footer -->
+	
+<!-- Footer -->
 <footer class="w3-container w3-padding-50 w3-center w3-brown w3-xlarge">
 <h5><u>Siga-nos em:</u></h5>
   <a href="https://www.facebook.com/EPadaria-101399275434399"><i class="fa fa-facebook-official"></i></a>

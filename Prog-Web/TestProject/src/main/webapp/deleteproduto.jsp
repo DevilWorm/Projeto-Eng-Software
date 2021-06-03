@@ -37,75 +37,64 @@
 
 </style>
 <body>
-<div align="center">
-	<form method="get">
-		<p> Indique o nome do produto a eliminar:</p>
-		<input type="text" name="produto">
-		<input type="submit" name="Eliminar">
-	</form>
-</div>
-	<%
-		String[] authors=request.getParameterValues("produto");
-		Class.forName("com.mysql.jdbc.Driver");
-		String author=request.getParameter("produto");
-		if(author!= null){
-			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
-			Statement stmt=conn.createStatement();
-			
-			String str="SELECT * FROM stock WHERE produto IN("; 
-			str+="'" +produto + "'";
-			
-			str+=") AND qty > 0 ORDER BY produto ASC";
-			
-			System.out.println("Query statement is " + str);
-			ResultSet rset= stmt.executeQuery(str);
+	<div class="main" align="center">
 		
-	%>
-	
-	<hr>
-	<form method="get" action="Orderbooks.jsp">
-	<table border=1 cellpadding=5>
-		<tr>
-			<th>Order</th>
-			<th>Author</th>
-			<th>Title</th>
-			<th>Price</th>
-			<th>Stock</th>
-			<th <a href="?delete<%=rs.getInt(1) %>">Eliminar</a></th>
-		</tr>
-	<%
-	while(rset.next()){
-		int id=rset.getInt("id");
-	
-	%>
-		<tr>
-			<td><input type="checkbox" name="id" value="<%= id %>"></td>
-			<td><%=rset.getString("author") %></td>
-			<td><%=rset.getString("title") %></td>
-			<td><%=rset.getString("price") %></td>
-			<td><%=rset.getString("qty") %></td>
-		</tr>
-	<%
-	}
-	%>	
-	
-	<%
-	   Class.forName("com.mysql.jdbc.Driver");
+		<h2> Selecione o produto que pretende eliminar</h2>
+		<table>
+			<tr>
+				<th>Id</th>
+				<th>Produto</th>
+				<th>Quantidade</th>
+				<th>Preço</th>
+				<th>Padaria</th>
+			</tr>
+		<%
+		 Class.forName("com.mysql.cj.jdbc.Driver");  
+		try{
 		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
-		if request.getParameter("delete")!=null){
-			int id=Integer.parseInt(request.getParameter("delete"));
+		PreparedStatement pstmt=null;
+		pstmt=con.prepareStatement("Select * from stock");
+		ResultSet rs=pstmt.executeQuery();
+		while(rs.next()){
+		%>
+		<tr>
+			<td><%rs.getInt(1)%></td>
+			<td><%rs.getString(2)%></td>
+			<td><%rs.getInt(3)%></td>
+			<td><%rs.getString(4)%></td>
+			<td><%rs.getString(5)%></td>
 			
-			PreparedStatement pstmt=null;
-			
-			pstmt.con=preparedStatement("delete from stock where id=?");
-			pstmt.setInt(1,id);
-			
-
-			con.close();
+			<td> <a href="?delete=<%=rs.getInt(1) %>"> Eliminar</a></td>
+			</tr>
+		<%
 		}
+		
+		} catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		
+		%>
+		</table>
+		
+	</div>
+	<%
+	try{
+		 Class.forName("com.mysql.cj.jdbc.Driver");
+		 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
+		 if(request.getParameter("delete"));{
+		 
+		 PreparedStatement pstmt=null;
+		 pstmt=con.prepareStatement("delete from stock where id=?");
+		 pstmt.setInt(1,id);
+		 
+		 con.close();
+	}
+	} catch(Exception e){
+		System.out.println(e);
+	}
+	
 	%>
-	
-	
 	
 </body>
 </html>

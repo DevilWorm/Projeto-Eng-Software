@@ -134,9 +134,6 @@ body {
   	</a>
 </div>
 <br><br><br>
-<center>
-<img src="https://i.imgur.com/sfDeVYR.png" alt="some text" width=192 height=96>
-</center>
 
 	
 	<div  align="center">

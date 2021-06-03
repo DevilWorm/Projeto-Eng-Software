@@ -41,7 +41,7 @@
 </head>
 <body>
 <div align="right">
-	<h3> Suporte técnico: xxxxx</h3>
+	<h3> Suporte técnico: 224 235 458</h3>
 </div>
 <div align="center">
 	<h1> Bem-vindo funcionário xxxx!</h1>
