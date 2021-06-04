@@ -54,72 +54,11 @@
 	    margin-right: auto;
 	}
  	</style>
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-.topnav {
-  overflow: hidden;
-  background-color: #943939;
-}
-
-.topnav a {
-  float: right;
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-
-.topnav a:hover {
-  background-color: #ffff;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #b36b6b;
-  color: white;
-  float: center;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: left;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-</style>
  	
 
 
-</style>
-<style>
 
-</style>
 <meta charset="ISO-8859-1">
 <title>Pagina inicial funcionário</title>
 </head>

@@ -146,7 +146,7 @@ body {
 	%>
 		<h3>Not logged in</h3>
 	<% }else{
-			try( Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
+			try( Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
 				Statement stat = conn.createStatement();){
 				ResultSet rset = stat.executeQuery("SELECT * FROM pedidos"); %>
 			<table border="1">

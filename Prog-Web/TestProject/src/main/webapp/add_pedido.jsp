@@ -78,6 +78,7 @@
 				            <td style="text-align:right">Tipo de pagamento:</td>
 				            <th><input type = "text" name="tipo_pagamento" id = "tipo_pagamento"></th>
 				        </tr>
+				        
 				      
 			        </thead>
 		        </table>

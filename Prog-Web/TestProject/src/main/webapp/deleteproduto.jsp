@@ -81,7 +81,7 @@
 	<%
 	try{
 		 Class.forName("com.mysql.cj.jdbc.Driver");
-		 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
+		 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
 		 if(request.getParameter("delete") != null){
 		 	int id = Integer.parseInt(request.getParameter("delete"));
 		 	PreparedStatement pstmt=null;

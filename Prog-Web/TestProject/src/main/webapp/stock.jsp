@@ -154,7 +154,7 @@ body {
 		String [] produtos = request.getParameterValues("produtos");
 		String produto = request.getParameter("produto");
 		if (produto != null){
-			try( Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
+			try( Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
 				Statement stat = conn.createStatement();){
 				
 				String str = "SELECT * FROM stock WHERE produto IN (";
