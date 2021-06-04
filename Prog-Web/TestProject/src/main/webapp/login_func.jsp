@@ -160,7 +160,7 @@ body {
 				
 				try{
 					Class.forName("com.mysql.cj.jdbc.Driver"); 
-					Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "Vasc1234");
+					Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
 					Statement stat = conn.createStatement();
 					ResultSet rset = stat.executeQuery("select * from funcionario");
 					boolean userCheck = false;

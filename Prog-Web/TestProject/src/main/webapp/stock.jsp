@@ -5,7 +5,9 @@
     pageEncoding="UTF-8"%>
 
 <%@ page import = "java.sql.*" %>
-<% Class.forName("com.mysql.cj.jdbc.Driver");  %>    
+<%@ page import = "epadaria.web.servlet.DBConnection" %>
+<% Class.forName("com.mysql.cj.jdbc.Driver");
+%>    
 
 <!DOCTYPE html>
 <html>
@@ -123,7 +125,11 @@ body {
 </style>
 <body>
 <div class="topnav" id="myTopnav">
-	<a href="http://localhost:8080/TestProject/login.jsp" ><img src="https://i.imgur.com/TYyFXOr.png" alt="some text" width=20 height=20></a>
+	<%  if(session.getAttribute("User") == null){ %>	
+			<a href="http://localhost:8080/TestProject/login.jsp" ><img src="https://i.imgur.com/TYyFXOr.png" alt="some text" width=20 height=20></a>
+	<%	}else{ %>
+			<a href="http://localhost:8080/TestProject/LogoutServlet"> <%= session.getAttribute("User") %> </a> 
+	<% 	} %>
     <a href="http://localhost:8080/TestProject/carrinho.jsp"><img src="https://i.imgur.com/06MKgJl.png" alt="some text" width=20 height=20></a>
   	<a href="http://localhost:8080/TestProject/home_page.jsp" >Home</a>
   	<a href="http://localhost:8080/TestProject/stock.jsp" class="active" >Produtos</a>
@@ -150,13 +156,15 @@ body {
 	</form>
 	<%
 		String produto = request.getParameter("produto");
+		String[] produtos = new String[100];
+		String[] prices = new String[100];
 		if (produto != null){
-			try( Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
+			try( Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
 				Statement stat = conn.createStatement();){
 			
 				String str = "SELECT * FROM stock WHERE produto IN (";
 				str += "'" + produto + "'";
-				str += ") AND qty > 0 ORDER BY produto ASC";
+				str += ") ORDER BY produto ASC";
 				
 				System.out.println("Query statement is " + str);
 				ResultSet rset = stat.executeQuery(str); %>
@@ -172,6 +180,9 @@ body {
 			<%
 				while (rset.next()){
 					int id = rset.getInt("id");
+					produtos[rset.getRow()-1] = rset.getString("produto");
+					prices[rset.getRow()-1] = rset.getString("preco");
+					
 			%>
 				<tr>
 					<td><input type = "checkbox" name = "id" value = "<%= id%>"></td>
@@ -192,53 +203,61 @@ body {
 			rset.close();
 			}catch(SQLException e) { System.out.println(e);}
 		}else{
-			try( Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
+			try(Connection conn = DBConnection.createConnection();
 				Statement stat = conn.createStatement();){
-			
+				
 				String str = "SELECT * FROM stock ORDER BY produto ASC";
 				System.out.println("Query statement is " + str);
 				ResultSet rset = stat.executeQuery(str); %>
-		<form method = "GET">
-			<table>
-				<tr>
-					<th>Comprar</th>
-					<th>Produto</th>
-					<th>Quantidade</th>
-					<th>Preço</th>
-					<th>Padaria</th>
-				</tr>	
-			<%
-				while (rset.next()){
-					int id = rset.getInt("id");
-			%>
-				<tr>
-					<td><input type = "checkbox" name = "id" value = "<%= id%>"></td>
-					<td><%= rset.getString("produto") %>
-					<td><input type = "number" name = "qty">
-					<td><%= rset.getString("preco") %> €
-					<td><%= rset.getString("padaria") %>
-				</tr>
-		<% } %>
-		</table>
-		<br>
-		<button class = "w3-button poggie" name = "checkout" value = null>Checkout</button>		
-	</form>
-		<%      
-			
-			stat.close();
-			conn.close();
-			rset.close();
+				<form method = "GET">
+					<table>
+						<tr>
+							<th>Comprar</th>
+							<th>Produto</th>
+							<th>Quantidade</th>
+							<th>Preço</th>
+							<th>Padaria</th>
+						</tr>	
+				<%	while (rset.next()){
+						int id = rset.getInt("id");
+						produtos[rset.getRow()-1] = rset.getString("produto");
+						prices[rset.getRow()-1] = rset.getString("preco"); %>
+						<tr>
+							<td><input type = "checkbox" name = "id" value = "<%= id%>"></td>
+							<td><%= rset.getString("produto") %>
+							<td><input type = "number" name = "qty">
+							<td><%= rset.getString("preco") %> €
+							<td><%= rset.getString("padaria") %>
+						</tr>
+				<%	} %>
+					</table>
+					<br>
+					<button class = "w3-button poggie" name = "checkout" value = null>Checkout</button>		
+				</form>
+			<%  stat.close();
+				conn.close();
+				rset.close();
 			}catch(SQLException e) { System.out.println(e);}
 		}
-		try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");){
+		try(Connection conn = DBConnection.createConnection();
+			Statement stat = conn.createStatement();){
+			System.out.print("Working?");
+			ResultSet rset = stat.executeQuery("SELECT morada FROM clientes where nome='"+((String) session.getAttribute("User"))+"'");
+			if(rset.next())
+				session.setAttribute("morada", rset.getString("morada"));	
+				
+			conn.close();
+		}
+		try(Connection conn = DBConnection.createConnection();){
+			
+			
 			if(request.getParameter("checkout") != null){
 				String[] ids = request.getParameterValues("id");
 				String[] qty = request.getParameterValues("qty");
-				String[] produtos = request.getParameterValues("produto");
-				String[] prices = request.getParameterValues("preco");
 				if(ids != null){
 					for(int i = 0; i < ids.length; i++){
-							PreparedStatement prep = conn.prepareStatement("insert into pedidos value(?,?,?,?,?,?,?,?,?)");
+						if(qty[i] != ""){
+							PreparedStatement prep = conn.prepareStatement("insert into pedidos value(?,?,?,?,?,?,?,?,?,?)");
 							prep.setInt(1, Integer.parseInt(ids[i]));
 							prep.setString(2, (String) session.getAttribute("User"));
 							prep.setString(3, produtos[i]);
@@ -248,7 +267,9 @@ body {
 							prep.setString(7, prices[i]);
 							prep.setString(8, "Cartão");
 							prep.setString(9, "Em espera");
+							prep.setString(10, (String) session.getAttribute("morada"));
 							prep.executeUpdate();
+						}
 					}
 				}
 			}

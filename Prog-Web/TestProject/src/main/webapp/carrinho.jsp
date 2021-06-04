@@ -148,10 +148,12 @@ body {
 	<% }else{
 			try( Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
 				Statement stat = conn.createStatement();){
-				ResultSet rset = stat.executeQuery("SELECT * FROM pedidos"); %>
+				ResultSet rset = stat.executeQuery("SELECT * FROM pedidos"); 
+				 %>
 			<table border="1">
 				<tr>
 					<th>Nº do Pedido</th>
+					<th>Produto</th>
 					<th>Hora de Levantamento</th>
 					<th>Data de Levantamento</th>
 					<th>Tipo de Pagamento</th>
@@ -159,20 +161,22 @@ body {
 					<th>Quantidade</th>
 					<th>User</th>
 				</tr>	
-			<%
+			<%  
 				while (rset.next()){
 					int pedido = rset.getInt("nr_pedido");
-					String hora = rset.getString("hora_entrega");
-					String data = rset.getString("data_entrega");
+					String produto = rset.getString("produto");
+					String hora = rset.getString("hora_leventamento");
+					String data = rset.getString("data_levantamento");
 					String tipo = rset.getString("tipo_pagamento");
 					String morada = rset.getString("morada_entrega");
-					int qty = rset.getInt("qty");
+					int qty = rset.getInt("quantidade");
 					String user = rset.getString("User");
 					String currentuser = (String) session.getAttribute("User");
 					if(user.contains(currentuser)){
 			%>
 				<tr>
 					<td><%= pedido %>
+					<td><%= produto %>
 					<td><%= hora %>
 					<td><%= data %>
 					<td><%= tipo %>
