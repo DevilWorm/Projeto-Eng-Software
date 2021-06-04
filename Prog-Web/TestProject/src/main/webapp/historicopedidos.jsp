@@ -152,14 +152,16 @@ ResultSet resultSet = null;
 <table align="center" cellpadding="8" cellspacing="8" border="1">
 
 <tr>
-<td><b>NIF</b></td>
 <td><b>Número de pedido</b></td>
+<td><b>Cliente</b></td>
+<td><b>Produto</b></td>
 <td><b>Quantidade</b></td>
 <td><b>Data</b></td>
 <td><b>Hora</b></td>
 <td><b>Preço</b></td>
 <td><b>Pagamento</b></td>
 <td><b>Estado</b></td>
+<td><b>Morada</b></td>
 </tr>
 
 <%
@@ -174,21 +176,25 @@ while(resultSet.next()){
 
 <tr>
 
-<td><%=resultSet.getString("nif") %></td>
+<td><%=resultSet.getString("nr_pedido") %></td>
 
-<td><%=resultSet.getString("nr_pedidos") %></td>
+<td><%=resultSet.getString("user") %></td>
+
+<td><%=resultSet.getString("produto") %></td>
 
 <td><%=resultSet.getString("quantidade") %></td>
 
 <td><%=resultSet.getString("data_levantamento") %></td>
 
-<td><%=resultSet.getString("hora_levantamento") %></td>
+<td><%=resultSet.getString("hora_leventamento") %></td>
 
 <td><%=resultSet.getString("preco_total") %></td>
 
 <td><%=resultSet.getString("tipo_pagamento") %></td>
 
 <td><%=resultSet.getString("Estado") %></td>
+
+<td><%=resultSet.getString("morada_entrega") %></td>
 
 </tr>
 

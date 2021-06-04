@@ -63,6 +63,8 @@
 <title>Pagina inicial funcionário</title>
 </head>
 <body>
+<% if(session.getAttribute("Func") == null) 
+	response.sendRedirect("http://localhost:8080/TestProject/home_page.jsp");%>
 <div align="right">
 	<h3> Suporte técnico: 224 235 458</h3>
 </div>

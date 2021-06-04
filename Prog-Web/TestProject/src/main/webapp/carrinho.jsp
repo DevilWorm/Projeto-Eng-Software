@@ -184,10 +184,7 @@ body {
 					<td><%= qty %>
 					<td><%= user %>
 				</tr>
-		    <% 		}else{ %>
-		    		<a> <%= user + " _ " + currentuser %></a>
-		    <% 
-		    		}
+		    <% 		}
 				} %>
 				
 		</table>

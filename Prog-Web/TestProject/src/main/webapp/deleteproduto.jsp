@@ -116,8 +116,8 @@ body {
 				<th>Id</th>
 				<th>Produto</th>
 				<th>Preço</th>
-				<th>Descrição</th>
 				<th>Padaria</th>
+				<th>Descrição</th>
 			</tr>
 		<%
 		try(Connection con= DBConnection.createConnection();){
