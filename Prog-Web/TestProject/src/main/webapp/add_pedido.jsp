@@ -7,6 +7,65 @@
 <head>
 <meta charset="ISO-8859-1">
 <style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #943939;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: #ffff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #b36b6b;
+  color: white;
+  float: center;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+<style>
 
 	.poggie {
 	 
@@ -38,6 +97,17 @@
 <title>Adicionar um pedido</title>
 </head>
 <body>
+<div class="topnav" id="myTopnav">
+	<a href="http://localhost:8080/TestProject/addproduto.jsp"  >Inserir produto</a>
+    <a href="http://localhost:8080/TestProject/deleteproduto.jsp">Eliminar produto</a>
+  	<a href="http://localhost:8080/TestProject/add_pedido.jsp" class="active">Adicionar pedido</a>
+  	<a href="http://localhost:8080/TestProject/waitpedidos.jsp" >Pedidos em espera</a>
+  	<a href="http://localhost:8080/TestProject/historicopedidos.jsp">Histórico de pedidos</a>
+  
+  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  	</a>
+</div>
 
 	<div align="center">
 	<form method="get">

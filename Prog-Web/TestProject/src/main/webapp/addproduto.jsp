@@ -98,7 +98,7 @@ body {
 </style>
 <body>
 <div class="topnav" id="myTopnav">
-	<a href="http://localhost:8080/TestProject/login.jsp" class="active" >Inserir produto</a>
+	<a href="http://localhost:8080/TestProject/addproduto.jsp" class="active" >Inserir produto</a>
     <a href="http://localhost:8080/TestProject/deleteproduto.jsp">Eliminar produto</a>
   	<a href="http://localhost:8080/TestProject/add_pedido.jsp" ">Adicionar pedido</a>
   	<a href="http://localhost:8080/TestProject/waitpedidos.jsp" >Pedidos em espera</a>
@@ -128,7 +128,7 @@ body {
 			        		<th><input type = "text" name = "qty" id = "qty"></th>			        	
 			        	</tr>
 				        <tr>
-				            <td style="text-align:right">Preço:</td>
+				            <td style="text-align:right">Preço(Un.):</td>
 				            <th><input type = "text" name="preco" id = "preco"></th>
 				        </tr>
 				        <tr>
