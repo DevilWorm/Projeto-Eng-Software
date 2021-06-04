@@ -160,7 +160,7 @@ body {
 				
 				try{
 					Class.forName("com.mysql.cj.jdbc.Driver"); 
-					Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
+					Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "Vasc1234");
 					Statement stat = conn.createStatement();
 					ResultSet rset = stat.executeQuery("select * from funcionario");
 					boolean userCheck = false;
@@ -169,7 +169,7 @@ body {
 						if(rset.getString("id_func").equals(user) && rset.getString("password").equals(pwd)){
 							//logged in!
 							System.out.println("Found a user!");
-							request.getSession().setAttribute("loggedInUser", user);
+							request.getSession().setAttribute("Func", user);
 							response.sendRedirect("http://localhost:8080/TestProject/page_func.jsp");
 							userCheck = true;
 						}

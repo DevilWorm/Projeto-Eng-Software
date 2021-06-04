@@ -67,7 +67,7 @@
 	<h3> Suporte técnico: 224 235 458</h3>
 </div>
 <div align="center">
-	<h1> Bem-vindo funcionário xxxx!</h1>
+	<h1> Bem-vindo funcionário <%= session.getAttribute("Func") %>!</h1>
 </div>
 
 <br>

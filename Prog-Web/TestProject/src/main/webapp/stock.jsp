@@ -139,11 +139,9 @@ body {
 
 	
 	<div  align="center">
-	<% if(session == null || session.getAttribute("User") == null){
-		%>
+	<% if(session == null || session.getAttribute("User") == null){ %>
 		<h3>Not logged in</h3>
 	<% }else{ %>
-	
 	<h3>Escolher Produtos</h3>
 	<form>
 		<p>Produto:</p>
@@ -151,12 +149,11 @@ body {
 		<input type = "submit" name = "Procurar">
 	</form>
 	<%
-		String [] produtos = request.getParameterValues("produtos");
 		String produto = request.getParameter("produto");
 		if (produto != null){
-			try( Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
+			try( Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
 				Statement stat = conn.createStatement();){
-				
+			
 				String str = "SELECT * FROM stock WHERE produto IN (";
 				str += "'" + produto + "'";
 				str += ") AND qty > 0 ORDER BY produto ASC";
@@ -194,23 +191,63 @@ body {
 			conn.close();
 			rset.close();
 			}catch(SQLException e) { System.out.println(e);}
+		}else{
+			try( Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");
+				Statement stat = conn.createStatement();){
+			
+				String str = "SELECT * FROM stock ORDER BY produto ASC";
+				System.out.println("Query statement is " + str);
+				ResultSet rset = stat.executeQuery(str); %>
+		<form method = "GET">
+			<table>
+				<tr>
+					<th>Comprar</th>
+					<th>Produto</th>
+					<th>Quantidade</th>
+					<th>Preço</th>
+					<th>Padaria</th>
+				</tr>	
+			<%
+				while (rset.next()){
+					int id = rset.getInt("id");
+			%>
+				<tr>
+					<td><input type = "checkbox" name = "id" value = "<%= id%>"></td>
+					<td><%= rset.getString("produto") %>
+					<td><input type = "number" name = "qty">
+					<td><%= rset.getString("preco") %> €
+					<td><%= rset.getString("padaria") %>
+				</tr>
+		<% } %>
+		</table>
+		<br>
+		<button class = "w3-button poggie" name = "checkout" value = null>Checkout</button>		
+	</form>
+		<%      
+			
+			stat.close();
+			conn.close();
+			rset.close();
+			}catch(SQLException e) { System.out.println(e);}
 		}
-		%>
-		<%
 		try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");){
 			if(request.getParameter("checkout") != null){
 				String[] ids = request.getParameterValues("id");
 				String[] qty = request.getParameterValues("qty");
+				String[] produtos = request.getParameterValues("produto");
+				String[] prices = request.getParameterValues("preco");
 				if(ids != null){
 					for(int i = 0; i < ids.length; i++){
-							PreparedStatement prep = conn.prepareStatement("insert into pedidos value(?,?,?,?,?,?,?)");
-							prep.setObject(2, LocalDate.now());
-							prep.setObject(1, LocalTime.now());
-							prep.setInt(3, Integer.parseInt(ids[i]));
-							prep.setString(4,"Empty For Now");
-							prep.setString(5, "Morada de Entrega");
-							prep.setInt(6, Integer.parseInt(qty[i]));
-							prep.setString(7, (String) session.getAttribute("User"));
+							PreparedStatement prep = conn.prepareStatement("insert into pedidos value(?,?,?,?,?,?,?,?,?)");
+							prep.setInt(1, Integer.parseInt(ids[i]));
+							prep.setString(2, (String) session.getAttribute("User"));
+							prep.setString(3, produtos[i]);
+							prep.setInt(4, Integer.parseInt(qty[i]));
+							prep.setObject(5, LocalDate.now());
+							prep.setObject(6, LocalTime.now());
+							prep.setString(7, prices[i]);
+							prep.setString(8, "Cartão");
+							prep.setString(9, "Em espera");
 							prep.executeUpdate();
 					}
 				}

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=Windows-1252"
+    pageEncoding="Windows-1252"%>
  
  <%@ page import = "java.sql.*" %>
 <!DOCTYPE html>
@@ -112,20 +112,16 @@ body {
 	<div align="center">
 	<H3> Adiconar produto</H3>
 	<br> <br>
-	<form method="get">
+	<form method="post">
 		        <table style="color:#943939">
 			        <thead>
-			        <tr>
-			        		<td style = "text-align:right">ID:</td>
+			       		<tr>
+			        		<td style = "text-align:right">Id:</td>
 			        		<th><input type = "text" name = "id" id = "id"></th>			        	
 			        	</tr>
 			        	<tr>
 			        		<td style = "text-align:right">Nome:</td>
 			        		<th><input type = "text" name = "nome" id = "nome"></th>			        	
-			        	</tr>
-			        	<tr>
-			        		<td style = "text-align:right">Quantidade:</td>
-			        		<th><input type = "text" name = "qty" id = "qty"></th>			        	
 			        	</tr>
 				        <tr>
 				            <td style="text-align:right">Preço(Un.):</td>
@@ -156,29 +152,19 @@ body {
 				String preco = request.getParameter("preco");
 				String descricao = request.getParameter("descricao");
 				String padaria = request.getParameter("padaria");
-	
-	
-	
-	 try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");){
-	
-		PreparedStatement preparedStatement = conn.prepareStatement("insert into stock value(?,?,?,?,?,?)");
-		
-			try{
 				
-					
-				preparedStatement.setString(1,id);	
+		try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");){
+			try{
+				PreparedStatement preparedStatement = conn.prepareStatement("insert into stock values (?,?,?,?,?)");
+				preparedStatement.setInt(1, Integer.parseInt(id));
 				preparedStatement.setString(2,nome);
-				preparedStatement.setString(3,qty);
-				preparedStatement.setString(4,preco);
-				preparedStatement.setString(5,descricao);
-				preparedStatement.setString(6,padaria);
+				preparedStatement.setString(3,preco);
+				preparedStatement.setString(4,descricao);
+				preparedStatement.setString(5,padaria);
 				preparedStatement.executeUpdate();
-					
-			
-			}catch(ArrayIndexOutOfBoundsException e){
-				System.out.println(e);
-			}
-		
+		}catch(ArrayIndexOutOfBoundsException e){
+			System.out.println(e);
+		}		
 	}
 }
 
