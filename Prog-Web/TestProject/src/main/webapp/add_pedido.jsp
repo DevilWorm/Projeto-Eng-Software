@@ -51,8 +51,8 @@
 			        		<th><input type = "text" name = "nr_pedido" id = "nr_pedido"></th>			        	
 			        	</tr>
 				        <tr>
-				            <td style="text-align:right">Nif do cliente:</td>
-				            <th><input type = "text" name="nif" id = "nif"></th>
+				            <td style="text-align:right">Nome do cliente:</td>
+				            <th><input type = "text" name="user" id = "user"></th>
 				        </tr>
 				        <tr>
 				            <td style="text-align:right">Produto:</td>
@@ -78,6 +78,10 @@
 				            <td style="text-align:right">Tipo de pagamento:</td>
 				            <th><input type = "text" name="tipo_pagamento" id = "tipo_pagamento"></th>
 				        </tr>
+				         <tr>
+				            <td style="text-align:right">Estado(Em processamento ou Concluído):</td>
+				            <th><input type = "text" name="Estado" id = "Estado"></th>
+				        </tr>
 				        
 				      
 			        </thead>
@@ -92,32 +96,34 @@
 
 	if(request.getParameter("add_pedido") != null){
 		String nr_pedido = request.getParameter("nr_pedido");
-		String nif = request.getParameter("nif");
+		String user = request.getParameter("user");
 		String produto = request.getParameter("produto");
 		String quantidade = request.getParameter("quantidade");
 		String data_levantamento = request.getParameter("data_levantamento");
 		String hora_levantamento = request.getParameter("hora_levantamento");
 		String preco_total = request.getParameter("preco_total");
 		String tipo_pagamento = request.getParameter("tipo_pagamento");
+		String Estado = request.getParameter("Estado");
 	
 	
 	
 	 try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ePadaria","root", "rita0412");){
 	
-		PreparedStatement preparedStatement = conn.prepareStatement("insert into pedidos value(?,?,?,?,?,?,?,?)");
+		PreparedStatement preparedStatement = conn.prepareStatement("insert into pedidos value(?,?,?,?,?,?,?,?,?)");
 		
 			try{
 				
 					
 					
 					preparedStatement.setString(1,nr_pedido);
-					preparedStatement.setString(2,nif);
+					preparedStatement.setString(2,user);
 					preparedStatement.setString(3,produto);
 					preparedStatement.setString(4,quantidade);
 					preparedStatement.setString(5,data_levantamento);
 					preparedStatement.setString(6,hora_levantamento);
 					preparedStatement.setString(7,preco_total);
 					preparedStatement.setString(8,tipo_pagamento);
+					preparedStatement.setString(9,Estado);
 					preparedStatement.executeUpdate();
 					
 					

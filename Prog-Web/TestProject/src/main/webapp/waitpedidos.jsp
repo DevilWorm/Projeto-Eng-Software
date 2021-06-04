@@ -62,7 +62,7 @@ Statement statement = null;
 ResultSet resultSet = null;
 %>
 
-<h2 align="center"><font><strong>Histórico de pedidos</strong></font></h2>
+<h2 align="center"><font><strong>Pedidos em espera</strong></font></h2>
 <table align="center" cellpadding="8" cellspacing="8" border="1">
 
 <tr>

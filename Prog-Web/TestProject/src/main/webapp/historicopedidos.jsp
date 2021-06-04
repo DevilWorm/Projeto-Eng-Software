@@ -43,9 +43,9 @@
 String id = request.getParameter("userId");
 String driverName = "com.mysql.jdbc.Driver";
 String connectionUrl = "jdbc:mysql://localhost:3306/";
-String dbName = "database_epadaria";
+String dbName = "epadaria";
 String userId = "root";
-String password = "1475963";
+String password = "rita0412";
 
 try {
 Class.forName(driverName);

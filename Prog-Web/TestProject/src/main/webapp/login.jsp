@@ -12,23 +12,7 @@
 <link rel="stylesheet" href="/w3css/3/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-<style>
-	.poggie {
-	 
-	  border: 10px;
-	  color: #943939;
-	  padding: 10px 27px;
-	  text-align: center;
-	  text-decoration: none;
-	  display: inline-block;
-	  font-size: 16px;
-	  
-	  margin: auto;
-	}
-	body {
- 	 background-color:#f5ecd0;}
 
-</style>
 <style>
 	.poggie {
 	 
