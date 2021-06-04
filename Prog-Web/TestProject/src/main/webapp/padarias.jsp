@@ -121,8 +121,8 @@ body {
     <a href="http://localhost:8080/TestProject/stock.jsp"><img src="https://i.imgur.com/06MKgJl.png" alt="some text" width=20 height=20></a>
   	<a href="http://localhost:8080/TestProject/home_page.jsp" >Home</a>
   	<a href="http://localhost:8080/TestProject/stock.jsp" >Produtos</a>
-  	<a href="http://localhost:8080/TestProject/sobre_nos.jsp" class="active">Sobre nós</a>
-  	<a href="http://localhost:8080/TestProject/padarias.jsp">Padarias</a>
+  	<a href="http://localhost:8080/TestProject/sobre_nos.jsp">Sobre nós</a>
+  	<a href="http://localhost:8080/TestProject/padarias.jsp" class="active">Padarias</a>
   	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   	</a>

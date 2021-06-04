@@ -112,6 +112,7 @@ body {
   	<a href="http://localhost:8080/TestProject/stock.jsp" >Produtos</a>
 
   	<a href="http://localhost:8080/TestProject/sobre_nos.jsp">Sobre nós</a>
+  	<a href="http://localhost:8080/TestProject/padarias.jsp">Padarias</a>
   	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   	</a>

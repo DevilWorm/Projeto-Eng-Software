@@ -1,10 +1,18 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    
+<%@page import="java.time.LocalTime"%>
+<%@page import="java.time.LocalDate"%>
+<%@page import="java.util.Date"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
 <%@ page import = "java.sql.*" %>
+<% Class.forName("com.mysql.cj.jdbc.Driver");  %>    
+
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="ISO-8859-1">
+	<title>HistÃ³rico de pedidos</title>
+</head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta charset="UTF-8">
@@ -113,85 +121,91 @@ body {
   }
 }
 </style>
-
-<% Class.forName("com.mysql.cj.jdbc.Driver");  %>
-<meta charset="ISO-8859-1">
-<title>Login Cliente</title>
-</head>
-<script>
-function formvalidation(){
-	var user = document.form.user.value;
-	var password = document.form.password.value;
-	
-	if ( user == null || user == ""){
-		alert("Insert username");
-		return false;
-	}
-}
-</script>
 <body>
-	<div class="topnav" id="myTopnav">
-	<a href="http://localhost:8080/TestProject/login.jsp" class="active" ><img src="https://i.imgur.com/TYyFXOr.png" alt="some text" width=20 height=20></a>
+<div class="topnav" id="myTopnav">
+	<a href="http://localhost:8080/TestProject/login.jsp" ><img src="https://i.imgur.com/TYyFXOr.png" alt="some text" width=20 height=20></a>
     <a href="http://localhost:8080/TestProject/carrinho.jsp"><img src="https://i.imgur.com/06MKgJl.png" alt="some text" width=20 height=20></a>
-  	<a href="http://localhost:8080/TestProject/home_page.jsp" ">Home</a>
-  	<a href="http://localhost:8080/TestProject/stock.jsp" >Produtos</a>
-
-  	<a href="http://localhost:8080/TestProject/sobre_nos.jsp">Sobre nós</a>
+  	<a href="http://localhost:8080/TestProject/home_page.jsp" >Home</a>
+  	<a href="http://localhost:8080/TestProject/stock.jsp"  >Produtos</a>
+  	<a href="http://localhost:8080/TestProject/sobre_nos.jsp">Sobre nÃ³s</a>
   	<a href="http://localhost:8080/TestProject/padarias.jsp">Padarias</a>
+  	<a href="http://localhost:8080/TestProject/historicopedidos.jsp" class="active">Pedidos</a>
   	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   	</a>
 </div>
 <br><br><br>
 
+<% 
+String id = request.getParameter("userId");
+String driverName = "com.mysql.jdbc.Driver";
+String connectionUrl = "jdbc:mysql://localhost:3306/";
+String dbName = "database_epadaria";
+String userId = "root";
+String password = "1475963";
 
-<br><br><br>
-	
-	
-	<div align="center" >
-	<h2>Login Cliente</h2>
-	<br>
-		<form name = "form" action = "LoginServlet" method="post" onsubmit = "return formvalidation()">
-		<table style="color:#943939">
-		<thead>
-		<tr>
-			<th>User</th>
-			<th><input name="user"></th>
-		</tr>
-		<tr>
-			<th>Password</th>
-			<th><input type = "password" name="password"></th>
-		</tr>
-		</thead>
-		</table>
-		<br>
-			<input class = "Poggie" type = "submit" value = "login"/>
-		</form>
-	
-	<br>
-	<a style="color:#943939" href = "http://localhost:8080/TestProject/signup.jsp"> Faça aqui o seu registo</a>
-	<br><br>
-	<a style="color:#b08989" href = "http://localhost:8080/TestProject/login_func.jsp"> Login Funcionário</a>
-	
-		</div>
-		
-	
+try {
+Class.forName(driverName);
+} catch (ClassNotFoundException e) {
+e.printStackTrace();
+}
 
-		
-		
-		<br><br>
-		<!-- Footer -->
-<footer class="w3-container w3-padding-50 w3-center w3-brown w3-xlarge">
-<h5><u>Siga-nos em:</u></h5>
-  <a href="https://www.facebook.com/EPadaria-101399275434399"><i class="fa fa-facebook-official"></i></a>
-  <h5> <u>Contactos:</u></h5>
-  <h6> Telefone geral: 224 233 105</h6>
-  <h6>E-mail: ePadaria@gmail.com</h6>
-  <img src="https://i.imgur.com/sfDeVYR.png" width=192 height=96>
-  
-  <p class="w3-medium">
-  
-  </p>
-</footer>	
+Connection connection = null;
+Statement statement = null;
+ResultSet resultSet = null;
+%>
+
+<h2 align="center"><font><strong>HistÃ³rico de pedidos</strong></font></h2>
+<table align="center" cellpadding="8" cellspacing="8" border="1">
+
+<tr bgcolor="#943939">
+<td><b>NIF</b></td>
+<td><b>NÃºmero de pedido</b></td>
+<td><b>Quantidade</b></td>
+<td><b>Data</b></td>
+<td><b>Hora</b></td>
+<td><b>PreÃ§o</b></td>
+<td><b>Pagamento</b></td>
+<td><b>Estado</b></td>
+</tr>
+
+<%
+try{ 
+connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/database_epadaria","root", "1475963");
+statement=connection.createStatement();
+String sql ="SELECT * from pedidos";
+
+resultSet = statement.executeQuery(sql);
+while(resultSet.next()){
+%>
+
+<tr bgcolor="#DEB887">
+
+<td><%=resultSet.getString("nif") %></td>
+
+<td><%=resultSet.getString("nr_pedidos") %></td>
+
+<td><%=resultSet.getString("quantidade") %></td>
+
+<td><%=resultSet.getString("data_levantamento") %></td>
+
+<td><%=resultSet.getString("hora_levantamento") %></td>
+
+<td><%=resultSet.getString("preco_total") %></td>
+
+<td><%=resultSet.getString("tipo_pagamento") %></td>
+
+<td><%=resultSet.getString("Estado") %></td>
+
+</tr>
+
+<% 
+}
+connection.close();
+} catch (Exception e) {
+	e.printStackTrace();
+}
+%>
+</table>
 </body>
 </html>
