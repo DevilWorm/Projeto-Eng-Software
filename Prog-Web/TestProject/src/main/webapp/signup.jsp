@@ -1,3 +1,4 @@
+<%@page import="epadaria.web.servlet.DBConnection"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
@@ -174,7 +175,7 @@ body {
 	<%
 			if(request.getParameter("signin") != null){
 				try(
-					Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
+					Connection conn = DBConnection.createConnection();
 					PreparedStatement preparedStatement = conn.prepareStatement("insert into clientes value(?,?,?,?,?,?,?,?)");			
 				){
 					String nome = request.getParameter("nome");
@@ -194,7 +195,7 @@ body {
 							preparedStatement.setString(5,nome);
 							preparedStatement.setString(6,tel);
 							preparedStatement.setString(7,morada);
-							preparedStatement.setString(8, "Empty");
+							preparedStatement.setString(8, "450 450 450");
 							preparedStatement.executeUpdate();
 							
 							System.out.println("Done?");
