@@ -1,3 +1,4 @@
+<%@page import="epadaria.web.servlet.DBConnection"%>
 <%@ page language="java" contentType="text/html; charset=Windows-1252"
     pageEncoding="Windows-1252"%>
  
@@ -108,9 +109,8 @@ body {
     <i class="fa fa-bars"></i>
   	</a>
 </div>
-<% Class.forName("com.mysql.cj.jdbc.Driver");  %>
 	<div align="center">
-	<H3> Adiconar produto</H3>
+	<H3> Adicionar produto</H3>
 	<br> <br>
 	<form method="post">
 		        <table style="color:#943939">
@@ -153,14 +153,14 @@ body {
 				String descricao = request.getParameter("descricao");
 				String padaria = request.getParameter("padaria");
 				
-		try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "vasc1234");){
+		try(Connection conn = DBConnection.createConnection();){
 			try{
 				PreparedStatement preparedStatement = conn.prepareStatement("insert into stock values (?,?,?,?,?)");
 				preparedStatement.setInt(1, Integer.parseInt(id));
 				preparedStatement.setString(2,nome);
 				preparedStatement.setString(3,preco);
-				preparedStatement.setString(4,descricao);
-				preparedStatement.setString(5,padaria);
+				preparedStatement.setString(4,padaria);
+				preparedStatement.setString(5,descricao);
 				preparedStatement.executeUpdate();
 		}catch(ArrayIndexOutOfBoundsException e){
 			System.out.println(e);

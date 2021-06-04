@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@page import="epadaria.web.servlet.DBConnection"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
     
      <%@ page import = "java.sql.*" %>
 <!DOCTYPE html>
@@ -102,7 +103,7 @@ body {
     <a href="http://localhost:8080/TestProject/deleteproduto.jsp">Eliminar produto</a>
   	<a href="http://localhost:8080/TestProject/add_pedido.jsp" class="active">Adicionar pedido</a>
   	<a href="http://localhost:8080/TestProject/waitpedidos.jsp" >Pedidos em espera</a>
-  	<a href="http://localhost:8080/TestProject/historicopedidos.jsp">Histórico de pedidos</a>
+  	<a href="http://localhost:8080/TestProject/historicopedidos.jsp">HistÃ³rico de pedidos</a>
   
   	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -112,12 +113,12 @@ body {
 	<div align="center">
 	<form method="get">
 	
-				<H3> Adiconar produto</H3>
+				<H3> Adicionar pedido:</H3>
 				<br><br>
 		        <table style="color:#943939">
 			        <thead>
 			        	<tr>
-			        		<td style = "text-align:right">Número pedido:</td>
+			        		<td style = "text-align:right">NÃºmero pedido:</td>
 			        		<th><input type = "text" name = "nr_pedido" id = "nr_pedido"></th>			        	
 			        	</tr>
 				        <tr>
@@ -130,7 +131,7 @@ body {
 				        </tr>
 				        <tr>
 				            <td style="text-align:right">Quantidade:</td>
-				            <th><input type = "text" name="padaria" id = "padaria"></th>
+				            <th><input type = "text" name="quantidade" id = "quantidade"></th>
 				        </tr>
 				        <tr>
 				            <td style="text-align:right">Data de levantamento:</td>
@@ -138,10 +139,10 @@ body {
 				        </tr>
 				        <tr>
 				            <td style="text-align:right">Hora de levantamento:</td>
-				            <th><input type = "text" name="hora_levantamento" id = "hora_levantamento"></th>
+				            <th><input type = "time" name="hora_levantamento" id = "hora_levantamento"></th>
 				        </tr>
 				        <tr>
-				            <td style="text-align:right">Preço total:</td>
+				            <td style="text-align:right">PreÃ§o total:</td>
 				            <th><input type = "text" name="preco_total" id = "preco_total"></th>
 				        </tr>
 				        <tr>
@@ -149,8 +150,12 @@ body {
 				            <th><input type = "text" name="tipo_pagamento" id = "tipo_pagamento"></th>
 				        </tr>
 				         <tr>
-				            <td style="text-align:right">Estado(Em processamento ou Concluído):</td>
+				            <td style="text-align:right">Estado(Em processamento ou ConcluÃ­do):</td>
 				            <th><input type = "text" name="Estado" id = "Estado"></th>
+				        </tr>
+				        <tr>
+				            <td style="text-align:right">Morada:</td>
+				            <th><input type = "text" name="morada" id = "morada"></th>
 				        </tr>
 				        
 				      
@@ -174,30 +179,23 @@ body {
 		String preco_total = request.getParameter("preco_total");
 		String tipo_pagamento = request.getParameter("tipo_pagamento");
 		String Estado = request.getParameter("Estado");
+		String morada = request.getParameter("morada");
 	
-	
-	
-	 try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ePadaria","root", "rita0412");){
-	
-		PreparedStatement preparedStatement = conn.prepareStatement("insert into pedidos value(?,?,?,?,?,?,?,?,?)");
+	try(Connection conn = DBConnection.createConnection();){
+		PreparedStatement preparedStatement = conn.prepareStatement("insert into pedidos value(?,?,?,?,?,?,?,?,?,?)");
 		
 			try{
-				
-					
-					
-					preparedStatement.setString(1,nr_pedido);
-					preparedStatement.setString(2,user);
-					preparedStatement.setString(3,produto);
-					preparedStatement.setString(4,quantidade);
-					preparedStatement.setString(5,data_levantamento);
-					preparedStatement.setString(6,hora_levantamento);
-					preparedStatement.setString(7,preco_total);
-					preparedStatement.setString(8,tipo_pagamento);
-					preparedStatement.setString(9,Estado);
-					preparedStatement.executeUpdate();
-					
-					
-			
+				preparedStatement.setString(1,nr_pedido);
+				preparedStatement.setString(2,user);
+				preparedStatement.setString(3,produto);
+				preparedStatement.setString(4,quantidade);
+				preparedStatement.setString(5,data_levantamento);
+				preparedStatement.setString(6,hora_levantamento);
+				preparedStatement.setString(7,preco_total);
+				preparedStatement.setString(8,tipo_pagamento);
+				preparedStatement.setString(9,Estado);
+				preparedStatement.setString(10,morada);
+				preparedStatement.executeUpdate();
 			}catch(ArrayIndexOutOfBoundsException e){
 				System.out.println(e);
 			}

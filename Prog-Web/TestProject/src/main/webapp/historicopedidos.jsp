@@ -1,11 +1,11 @@
+<%@page import="epadaria.web.servlet.DBConnection"%>
 <%@page import="java.time.LocalTime"%>
 <%@page import="java.time.LocalDate"%>
 <%@page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<%@ page import = "java.sql.*" %>
-<% Class.forName("com.mysql.cj.jdbc.Driver");  %>    
+<%@ page import = "java.sql.*" %>  
 
 <!DOCTYPE html>
 <html>
@@ -141,17 +141,7 @@ body {
 </div>
 <% 
 String id = request.getParameter("userId");
-String driverName = "com.mysql.jdbc.Driver";
-String connectionUrl = "jdbc:mysql://localhost:3306/";
-String dbName = "epadaria";
-String userId = "root";
-String password = "rita0412";
 
-try {
-Class.forName(driverName);
-} catch (ClassNotFoundException e) {
-e.printStackTrace();
-}
 
 Connection connection = null;
 Statement statement = null;
@@ -174,7 +164,7 @@ ResultSet resultSet = null;
 
 <%
 try{ 
-connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
+connection = DBConnection.createConnection();
 statement=connection.createStatement();
 String sql ="SELECT * from pedidos where Estado='Concluído'";
 

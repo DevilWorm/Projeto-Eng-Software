@@ -1,14 +1,11 @@
 <%@page import="java.time.LocalTime"%>
 <%@page import="java.time.LocalDate"%>
 <%@page import="java.util.Date"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=Windows-1252"
+    pageEncoding="Windows-1252"%>
 
 <%@ page import = "java.sql.*" %>
 <%@ page import = "epadaria.web.servlet.DBConnection" %>
-<% Class.forName("com.mysql.cj.jdbc.Driver");
-%>    
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -133,7 +130,7 @@ body {
     <a href="http://localhost:8080/TestProject/carrinho.jsp"><img src="https://i.imgur.com/06MKgJl.png" alt="some text" width=20 height=20></a>
   	<a href="http://localhost:8080/TestProject/home_page.jsp" >Home</a>
   	<a href="http://localhost:8080/TestProject/stock.jsp" class="active" >Produtos</a>
-  	<a href="http://localhost:8080/TestProject/sobre_nos.jsp">Sobre n√≥s</a>
+  	<a href="http://localhost:8080/TestProject/sobre_nos.jsp">Sobre nÛs</a>
   	<a href="http://localhost:8080/TestProject/padarias.jsp">Padarias</a>
   	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -159,7 +156,7 @@ body {
 		String[] produtos = new String[100];
 		String[] prices = new String[100];
 		if (produto != null){
-			try( Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/epadaria","root", "rita0412");
+			try( Connection conn = DBConnection.createConnection();
 				Statement stat = conn.createStatement();){
 			
 				String str = "SELECT * FROM stock WHERE produto IN (";
@@ -174,7 +171,7 @@ body {
 					<th>Comprar</th>
 					<th>Produto</th>
 					<th>Quantidade</th>
-					<th>Pre√ßo</th>
+					<th>PreÁo</th>
 					<th>Padaria</th>
 				</tr>	
 			<%
@@ -188,7 +185,7 @@ body {
 					<td><input type = "checkbox" name = "id" value = "<%= id%>"></td>
 					<td><%= rset.getString("produto") %>
 					<td><input type = "number" name = "qty">
-					<td><%= rset.getString("preco") %> ‚Ç¨
+					<td><%= rset.getString("preco") %> Ä
 					<td><%= rset.getString("padaria") %>
 				</tr>
 		<% } %>
@@ -215,7 +212,7 @@ body {
 							<th>Comprar</th>
 							<th>Produto</th>
 							<th>Quantidade</th>
-							<th>Pre√ßo</th>
+							<th>PreÁo</th>
 							<th>Padaria</th>
 						</tr>	
 				<%	while (rset.next()){
@@ -226,7 +223,7 @@ body {
 							<td><input type = "checkbox" name = "id" value = "<%= id%>"></td>
 							<td><%= rset.getString("produto") %>
 							<td><input type = "number" name = "qty">
-							<td><%= rset.getString("preco") %> ‚Ç¨
+							<td><%= rset.getString("preco") %> Ä
 							<td><%= rset.getString("padaria") %>
 						</tr>
 				<%	} %>
@@ -265,7 +262,7 @@ body {
 							prep.setObject(5, LocalDate.now());
 							prep.setObject(6, LocalTime.now());
 							prep.setString(7, prices[i]);
-							prep.setString(8, "Cart√£o");
+							prep.setString(8, "Cart„o");
 							prep.setString(9, "Em espera");
 							prep.setString(10, (String) session.getAttribute("morada"));
 							prep.executeUpdate();
